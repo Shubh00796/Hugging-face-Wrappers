@@ -1,0 +1,23 @@
+2025-03-06T13:29:54.935+05:30 ERROR 26844 --- [ai] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.main.web-application-type' to org.springframework.boot.WebApplicationType:
+
+    Property: spring.main.web-application-type
+    Value: "servlet # Use 'reactive' if fully reactive, else 'servlet'"
+    Origin: class path resource [application.properties] - 61:34
+    Reason: failed to convert java.lang.String to org.springframework.boot.WebApplicationType (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.WebApplicationType.servlet # Use 'reactive' if fully reactive, else 'servlet')
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    NONE
+    REACTIVE
+    SERVLET
+
