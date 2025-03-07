@@ -505,3 +505,303 @@ java.net.SocketException: Connection reset
 2025-03-07T13:25:34.895+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
 2025-03-07T13:25:34.897+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."]
 2025-03-07T13:25:34.899+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T15:14:43.661+05:30  INFO 20932 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T15:14:43.675+05:30  INFO 20932 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T15:14:43.677+05:30  INFO 20932 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T15:14:43.686+05:30  INFO 20932 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T15:14:43.782+05:30  INFO 20932 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T15:14:43.793+05:30  INFO 20932 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T15:14:43.800+05:30  INFO 20932 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T15:14:55.907+05:30  INFO 30248 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 30248 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T15:14:55.911+05:30 DEBUG 30248 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T15:14:55.913+05:30  INFO 30248 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T15:14:56.109+05:30  INFO 30248 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T15:14:56.111+05:30  INFO 30248 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T15:14:58.571+05:30  INFO 30248 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T15:14:59.044+05:30  INFO 30248 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 437 ms. Found 2 JPA repository interfaces.
+2025-03-07T15:15:01.604+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T15:15:01.640+05:30  INFO 30248 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T15:15:01.641+05:30  INFO 30248 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T15:15:01.789+05:30  INFO 30248 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T15:15:01.790+05:30  INFO 30248 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5678 ms
+2025-03-07T15:15:02.175+05:30 DEBUG 30248 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T15:15:02.623+05:30  INFO 30248 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T15:15:02.926+05:30  INFO 30248 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T15:15:03.047+05:30  INFO 30248 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T15:15:03.754+05:30  INFO 30248 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T15:15:03.809+05:30  INFO 30248 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T15:15:04.282+05:30  INFO 30248 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7f5857f1
+2025-03-07T15:15:04.288+05:30  INFO 30248 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T15:15:04.390+05:30  WARN 30248 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T15:15:04.439+05:30  INFO 30248 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T15:15:06.143+05:30  INFO 30248 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T15:15:06.319+05:30  INFO 30248 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T15:15:08.090+05:30  WARN 30248 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T15:15:08.367+05:30 DEBUG 30248 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2025-03-07T15:15:08.530+05:30 DEBUG 30248 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T15:15:08.653+05:30 DEBUG 30248 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T15:15:08.789+05:30 DEBUG 30248 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T15:15:09.902+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T15:15:10.080+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-07T15:15:10.314+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T15:15:10.316+05:30  INFO 30248 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T15:15:10.317+05:30  INFO 30248 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T15:15:10.412+05:30  INFO 30248 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T15:15:10.412+05:30  INFO 30248 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 325 ms
+2025-03-07T15:15:10.449+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T15:15:10.491+05:30 DEBUG 30248 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T15:15:10.526+05:30 DEBUG 30248 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T15:15:10.590+05:30 DEBUG 30248 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T15:15:10.643+05:30  INFO 30248 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T15:15:10.688+05:30  INFO 30248 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 16.413 seconds (process running for 17.814)
+2025-03-07T15:18:29.458+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-07T15:18:29.459+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-07T15:18:29.460+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T15:18:29.460+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T15:18:29.460+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T15:18:29.463+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@30c3f7de
+2025-03-07T15:18:29.465+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@602584c
+2025-03-07T15:18:29.465+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T15:18:29.466+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-03-07T15:18:29.494+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/analyses", parameters={}
+2025-03-07T15:18:29.503+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#requestAnalysis(AnalysisRequest)
+2025-03-07T15:18:29.633+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AnalysisRequest(documentId=2, modelId=google/flan-t5-large, generateSummary=true, extractKeyInsights (truncated)...]
+2025-03-07T15:18:29.732+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] c.h.ai.controller.AnalysisController     : Received request to analyze document ID: 2
+2025-03-07T15:18:29.732+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] c.h.ai.serviceimpl.AnalysisServiceImpl   : Requesting analysis for document ID: 2
+2025-03-07T15:18:30.002+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] c.h.ai.serviceimpl.AnalysisServiceImpl   : Processing analysis ID: 1
+2025-03-07T15:18:30.021+05:30  INFO 30248 --- [ai] [task-1] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 2
+2025-03-07T15:18:30.037+05:30  INFO 30248 --- [ai] [task-1] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T15:18:30.125+05:30 DEBUG 30248 --- [ai] [task-1] o.s.w.r.f.client.ExchangeFunctions       : [61beb28a] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T15:18:31.670+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [61beb28a] Encoding [{inputs=now you are compleyrty worong the approvalid is for  @Id<EOL><EOL>    @GeneratedValue(strategy = Gen (truncated)...]
+2025-03-07T15:18:37.101+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [61beb28a] [e6dadddc-1] Response 200 OK
+2025-03-07T15:18:37.131+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [61beb28a] [e6dadddc-1] Decoded "[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."
+2025-03-07T15:18:37.133+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-2] c.h.a.s.HuggingFaceServiceImpl           : Analyzing text using model: google/flan-t5-large
+2025-03-07T15:18:37.136+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.w.r.f.client.ExchangeFunctions       : [9041212] HTTP POST https://api-inference.huggingface.co/models/google/flan-t5-large
+2025-03-07T15:18:37.140+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [9041212] Encoding [{inputs=[{"summary_text":"This is entity class for geric field, in that user add there approval emai (truncated)...]
+2025-03-07T15:18:39.820+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [9041212] [e6dadddc-2] Response 200 OK
+2025-03-07T15:18:39.822+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [9041212] [e6dadddc-2] Decoded "[{"generated_text":"[\"summary_text]:\"This is the entity class for ge"}]"
+2025-03-07T15:18:39.882+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:18:39.885+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=1, documentId=2, modelUsed=google/flan-t5-large, summary=null, keyInsights=null, (truncated)...]
+2025-03-07T15:18:39.899+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:19:07.667+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/analyses", parameters={}
+2025-03-07T15:19:07.667+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#requestAnalysis(AnalysisRequest)
+2025-03-07T15:19:07.669+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AnalysisRequest(documentId=2, modelId=bert-base-uncased, generateSummary=true, extractKeyInsights=tr (truncated)...]
+2025-03-07T15:19:07.671+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-3] c.h.ai.controller.AnalysisController     : Received request to analyze document ID: 2
+2025-03-07T15:19:07.671+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-3] c.h.ai.serviceimpl.AnalysisServiceImpl   : Requesting analysis for document ID: 2
+2025-03-07T15:19:07.686+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-3] c.h.ai.serviceimpl.AnalysisServiceImpl   : Processing analysis ID: 2
+2025-03-07T15:19:07.690+05:30  INFO 30248 --- [ai] [task-2] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 2
+2025-03-07T15:19:07.699+05:30  INFO 30248 --- [ai] [task-2] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T15:19:07.700+05:30 DEBUG 30248 --- [ai] [task-2] o.s.w.r.f.client.ExchangeFunctions       : [331a3dd] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T15:19:07.701+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [331a3dd] Encoding [{inputs=now you are compleyrty worong the approvalid is for  @Id<EOL><EOL>    @GeneratedValue(strategy = Gen (truncated)...]
+2025-03-07T15:19:07.937+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [331a3dd] [e6dadddc-3] Response 200 OK
+2025-03-07T15:19:07.947+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [331a3dd] [e6dadddc-3] Decoded "[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."
+2025-03-07T15:19:07.948+05:30  INFO 30248 --- [ai] [http-nio-8082-exec-3] c.h.a.s.HuggingFaceServiceImpl           : Analyzing text using model: bert-base-uncased
+2025-03-07T15:19:07.949+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] o.s.w.r.f.client.ExchangeFunctions       : [19767f7d] HTTP POST https://api-inference.huggingface.co/models/bert-base-uncased
+2025-03-07T15:19:07.951+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [19767f7d] Encoding [{inputs=[{"summary_text":"This is entity class for geric field, in that user add there approval emai (truncated)...]
+2025-03-07T15:19:09.817+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [19767f7d] [e6dadddc-4] Response 503 SERVICE_UNAVAILABLE
+2025-03-07T15:19:09.825+05:30 DEBUG 30248 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [19767f7d] [e6dadddc-4] Read 3039 bytes
+2025-03-07T15:19:09.845+05:30 ERROR 30248 --- [ai] [reactor-http-nio-2] c.h.a.s.HuggingFaceServiceImpl           : Error calling Hugging Face API: 503 Service Unavailable from POST https://api-inference.huggingface.co/models/bert-base-uncased
+2025-03-07T15:19:09.857+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:19:09.859+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=2, documentId=2, modelUsed=bert-base-uncased, summary=null, keyInsights=null, st (truncated)...]
+2025-03-07T15:19:09.860+05:30 DEBUG 30248 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:23:38.090+05:30  INFO 30248 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T15:23:38.101+05:30  INFO 30248 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T15:23:38.102+05:30  INFO 30248 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T15:23:38.109+05:30  INFO 30248 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T15:23:38.149+05:30  INFO 30248 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T15:23:38.153+05:30  INFO 30248 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T15:23:38.158+05:30  INFO 30248 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T15:23:45.632+05:30  INFO 29948 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 29948 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T15:23:45.636+05:30 DEBUG 29948 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T15:23:45.638+05:30  INFO 29948 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T15:23:45.825+05:30  INFO 29948 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T15:23:45.826+05:30  INFO 29948 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T15:23:47.924+05:30  INFO 29948 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T15:23:48.150+05:30  INFO 29948 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 207 ms. Found 2 JPA repository interfaces.
+2025-03-07T15:23:49.843+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T15:23:49.869+05:30  INFO 29948 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T15:23:49.870+05:30  INFO 29948 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T15:23:50.022+05:30  INFO 29948 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T15:23:50.023+05:30  INFO 29948 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4196 ms
+2025-03-07T15:23:50.381+05:30 DEBUG 29948 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T15:23:50.716+05:30  INFO 29948 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T15:23:50.854+05:30  INFO 29948 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T15:23:50.914+05:30  INFO 29948 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T15:23:51.394+05:30  INFO 29948 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T15:23:51.441+05:30  INFO 29948 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T15:23:51.718+05:30  INFO 29948 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a68e08b
+2025-03-07T15:23:51.721+05:30  INFO 29948 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T15:23:51.812+05:30  WARN 29948 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T15:23:51.844+05:30  INFO 29948 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T15:23:53.221+05:30  INFO 29948 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T15:23:53.328+05:30  INFO 29948 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T15:23:55.081+05:30  WARN 29948 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T15:23:55.366+05:30 DEBUG 29948 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2025-03-07T15:23:55.529+05:30 DEBUG 29948 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T15:23:55.629+05:30 DEBUG 29948 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T15:23:55.788+05:30 DEBUG 29948 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T15:23:56.844+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T15:23:57.050+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-07T15:23:57.316+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T15:23:57.320+05:30  INFO 29948 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T15:23:57.321+05:30  INFO 29948 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T15:23:57.395+05:30  INFO 29948 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T15:23:57.397+05:30  INFO 29948 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 337 ms
+2025-03-07T15:23:57.434+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T15:23:57.484+05:30 DEBUG 29948 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T15:23:57.508+05:30 DEBUG 29948 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T15:23:57.532+05:30 DEBUG 29948 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T15:23:57.598+05:30  INFO 29948 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T15:23:57.631+05:30  INFO 29948 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 12.91 seconds (process running for 13.996)
+2025-03-07T15:24:22.212+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-07T15:24:22.212+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-07T15:24:22.212+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T15:24:22.212+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T15:24:22.212+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T15:24:22.215+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3c485986
+2025-03-07T15:24:22.215+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5d5fd8a6
+2025-03-07T15:24:22.216+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T15:24:22.216+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-03-07T15:24:22.246+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/analyses", parameters={}
+2025-03-07T15:24:22.254+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#requestAnalysis(AnalysisRequest)
+2025-03-07T15:24:22.441+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [AnalysisRequest(documentId=2, modelId=bert-base-uncased, generateSummary=true, extractKeyInsights=tr (truncated)...]
+2025-03-07T15:24:22.561+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.ai.controller.AnalysisController     : Received request to analyze document ID: 2
+2025-03-07T15:24:22.561+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.ai.serviceimpl.AnalysisServiceImpl   : Requesting analysis for document ID: 2
+2025-03-07T15:24:22.818+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.ai.serviceimpl.AnalysisServiceImpl   : Processing analysis ID: 3
+2025-03-07T15:24:22.830+05:30  INFO 29948 --- [ai] [task-1] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 2
+2025-03-07T15:24:22.842+05:30  INFO 29948 --- [ai] [task-1] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T15:24:22.923+05:30 DEBUG 29948 --- [ai] [task-1] o.s.w.r.f.client.ExchangeFunctions       : [37696af0] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T15:24:24.296+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [37696af0] Encoding [{inputs=now you are compleyrty worong the approvalid is for  @Id<EOL><EOL>    @GeneratedValue(strategy = Gen (truncated)...]
+2025-03-07T15:24:24.688+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [37696af0] [71368588-1] Response 200 OK
+2025-03-07T15:24:24.720+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [37696af0] [71368588-1] Decoded "[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."
+2025-03-07T15:24:24.720+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.a.s.HuggingFaceServiceImpl           : Analyzing text using model: bert-base-uncased
+2025-03-07T15:24:24.724+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.w.r.f.client.ExchangeFunctions       : [43362383] HTTP POST https://api-inference.huggingface.co/models/bert-base-uncased
+2025-03-07T15:24:24.726+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [43362383] Encoding [{inputs=[{"summary_text":"This is entity class for geric field, in that user add there approval emai (truncated)...]
+2025-03-07T15:24:24.986+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [43362383] [71368588-2] Response 400 BAD_REQUEST
+2025-03-07T15:24:24.999+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [43362383] [71368588-2] Read 140 bytes
+2025-03-07T15:24:25.025+05:30 ERROR 29948 --- [ai] [reactor-http-nio-2] c.h.a.s.HuggingFaceServiceImpl           : Error calling Hugging Face API: 400 Bad Request from POST https://api-inference.huggingface.co/models/bert-base-uncased
+2025-03-07T15:24:25.026+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.a.s.HuggingFaceServiceImpl           : Generating summary using model: facebook/bart-large-cnn
+2025-03-07T15:24:25.027+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.w.r.f.client.ExchangeFunctions       : [ecc7b58] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T15:24:25.028+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [ecc7b58] Encoding [{inputs=[{"summary_text":"This is entity class for geric field, in that user add there approval emai (truncated)...]
+2025-03-07T15:24:32.944+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [ecc7b58] [71368588-3] Response 200 OK
+2025-03-07T15:24:32.948+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [ecc7b58] [71368588-3] Decoded "[{"summary_text":"User approval has the list of the user which he selctes form the dropdown menu lik (truncated)..."
+2025-03-07T15:24:32.949+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-2] c.h.a.s.HuggingFaceServiceImpl           : Extracting key insights using model: google/flan-t5-xl
+2025-03-07T15:24:32.950+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.w.r.f.client.ExchangeFunctions       : [7a4a7a68] HTTP POST https://api-inference.huggingface.co/models/google/flan-t5-xl
+2025-03-07T15:24:32.951+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [7a4a7a68] Encoding [{inputs=Extract the key insights from this text: [{"summary_text":"This is entity class for geric fi (truncated)...]
+2025-03-07T15:24:33.530+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [7a4a7a68] [71368588-4] Response 403 FORBIDDEN
+2025-03-07T15:24:33.531+05:30 DEBUG 29948 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [7a4a7a68] [71368588-4] Read 94 bytes
+2025-03-07T15:24:33.532+05:30 ERROR 29948 --- [ai] [reactor-http-nio-2] c.h.a.s.HuggingFaceServiceImpl           : Error calling Hugging Face API: 403 Forbidden from POST https://api-inference.huggingface.co/models/google/flan-t5-xl
+2025-03-07T15:24:33.578+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:24:33.581+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=3, documentId=2, modelUsed=bert-base-uncased, summary=[{"summary_text":"User app (truncated)...]
+2025-03-07T15:24:33.589+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:59:10.144+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/analyses/1", parameters={}
+2025-03-07T15:59:10.145+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#getAnalysis(Long)
+2025-03-07T15:59:10.148+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-5] c.h.ai.controller.AnalysisController     : Received request to get analysis with ID: 1
+2025-03-07T15:59:10.163+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:59:10.163+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=1, documentId=2, modelUsed=google/flan-t5-large, summary=null, keyInsights=null, (truncated)...]
+2025-03-07T15:59:10.165+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:59:16.754+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/analyses/2", parameters={}
+2025-03-07T15:59:16.755+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#getAnalysis(Long)
+2025-03-07T15:59:16.755+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-6] c.h.ai.controller.AnalysisController     : Received request to get analysis with ID: 2
+2025-03-07T15:59:16.762+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:59:16.763+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=2, documentId=2, modelUsed=bert-base-uncased, summary=null, keyInsights=null, st (truncated)...]
+2025-03-07T15:59:16.764+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:59:20.806+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/analyses/3", parameters={}
+2025-03-07T15:59:20.806+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#getAnalysis(Long)
+2025-03-07T15:59:20.807+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-7] c.h.ai.controller.AnalysisController     : Received request to get analysis with ID: 3
+2025-03-07T15:59:20.814+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:59:20.816+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [AnalysisResponse(id=3, documentId=2, modelUsed=bert-base-uncased, summary=[{"summary_text":"User app (truncated)...]
+2025-03-07T15:59:20.818+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-03-07T15:59:33.665+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/analyses/4", parameters={}
+2025-03-07T15:59:33.666+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.AnalysisController#getAnalysis(Long)
+2025-03-07T15:59:33.666+05:30  INFO 29948 --- [ai] [http-nio-8082-exec-8] c.h.ai.controller.AnalysisController     : Received request to get analysis with ID: 4
+2025-03-07T15:59:33.672+05:30 ERROR 29948 --- [ai] [http-nio-8082-exec-8] c.h.ai.controller.AnalysisController     : Error while getting analysis
+
+java.util.concurrent.ExecutionException: com.huggingFace.ai.exceptions.ResourceNotFoundException: Analysis not found with ID: 4
+	at java.base/java.util.concurrent.CompletableFuture.wrapInExecutionException(CompletableFuture.java:345) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:440) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2117) ~[na:na]
+	at com.huggingFace.ai.controller.AnalysisController.getAnalysis(AnalysisController.java:40) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.3.jar:6.2.3]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.36.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.3.jar:6.2.3]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: com.huggingFace.ai.exceptions.ResourceNotFoundException: Analysis not found with ID: 4
+	at com.huggingFace.ai.serviceimpl.AnalysisServiceImpl.lambda$getAnalysis$2(AnalysisServiceImpl.java:149) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.huggingFace.ai.serviceimpl.AnalysisServiceImpl.lambda$getAnalysis$3(AnalysisServiceImpl.java:149) ~[classes/:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812) ~[na:na]
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1804) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:507) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1460) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:2036) ~[na:na]
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:189) ~[na:na]
+
+2025-03-07T15:59:33.685+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T15:59:33.688+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T15:59:33.689+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to get analysis, timestamp=2025-03-07T15:59:33.687093900, sta (truncated)...]
+2025-03-07T15:59:33.694+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.DisconnectedClient         : Looks like the client has gone away: org.apache.catalina.connector.ClientAbortException: java.io.IOException: The current thread was interrupted (For a full stack trace, set the log category 'org.apache.commons.logging.LogAdapter$Slf4jLocationAwareLog@5ffd20cc' to TRACE level.)
+2025-03-07T15:59:33.696+05:30  WARN 29948 --- [ai] [http-nio-8082-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.RuntimeException: Failed to get analysis]
+2025-03-07T15:59:33.697+05:30 DEBUG 29948 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
