@@ -18,7 +18,7 @@ public class WebClientConfig {
     @Bean
     public WebClient huggingFaceWebClient() {
         return WebClient.builder()
-                .baseUrl(baseUrl)
+                .baseUrl(baseUrl.trim())
                 .defaultHeader(HttpHeaders.AUTHORIZATION, "Bearer " + apiToken)
                 .build();
     }

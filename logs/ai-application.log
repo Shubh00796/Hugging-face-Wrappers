@@ -1,23 +1,507 @@
-2025-03-06T13:29:54.935+05:30 ERROR 26844 --- [ai] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+2025-03-07T00:01:30.230+05:30  INFO 68 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 68 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T00:01:30.279+05:30 DEBUG 68 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T00:01:30.281+05:30  INFO 68 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T00:01:30.534+05:30  INFO 68 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T00:01:30.536+05:30  INFO 68 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T00:01:32.978+05:30  INFO 68 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T00:01:33.208+05:30  INFO 68 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 215 ms. Found 2 JPA repository interfaces.
+2025-03-07T00:01:34.640+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T00:01:34.668+05:30  INFO 68 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:01:34.669+05:30  INFO 68 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:01:34.779+05:30  INFO 68 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:01:34.780+05:30  INFO 68 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4241 ms
+2025-03-07T00:01:35.184+05:30 DEBUG 68 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T00:01:35.551+05:30  INFO 68 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T00:01:35.673+05:30  INFO 68 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T00:01:35.749+05:30  INFO 68 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T00:01:36.219+05:30  INFO 68 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T00:01:36.265+05:30  INFO 68 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T00:01:36.547+05:30  INFO 68 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b1d217a
+2025-03-07T00:01:36.551+05:30  INFO 68 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T00:01:36.626+05:30  WARN 68 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T00:01:36.655+05:30  INFO 68 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T00:01:37.733+05:30  INFO 68 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T00:01:37.838+05:30  INFO 68 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T00:01:39.081+05:30  WARN 68 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T00:01:39.326+05:30 DEBUG 68 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:01:39.462+05:30 DEBUG 68 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:01:39.548+05:30 DEBUG 68 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:01:39.665+05:30 DEBUG 68 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T00:01:40.517+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T00:01:40.668+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/api'
+2025-03-07T00:01:40.853+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T00:01:40.854+05:30  INFO 68 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:01:40.855+05:30  INFO 68 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:01:40.924+05:30  INFO 68 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:01:40.925+05:30  INFO 68 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 252 ms
+2025-03-07T00:01:40.956+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T00:01:40.985+05:30 DEBUG 68 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:01:40.996+05:30 DEBUG 68 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:01:41.011+05:30 DEBUG 68 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:01:41.033+05:30  INFO 68 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T00:01:41.060+05:30  INFO 68 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 12.674 seconds (process running for 14.2)
+2025-03-07T00:02:08.325+05:30  INFO 68 --- [ai] [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-03-07T00:02:08.326+05:30  INFO 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServletRegistration'
+2025-03-07T00:02:08.326+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T00:02:08.326+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T00:02:08.326+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T00:02:08.327+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@248b7d24
+2025-03-07T00:02:08.327+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@38d7d8cc
+2025-03-07T00:02:08.327+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T00:02:08.329+05:30  INFO 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-07T00:02:08.340+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T00:02:08.356+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T00:02:08.388+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T00:02:08.391+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T00:0 (truncated)...]
+2025-03-07T00:02:08.419+05:30  WARN 68 --- [ai] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T00:02:08.420+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T00:05:16.976+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T00:05:16.977+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T00:05:16.978+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T00:05:16.979+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T00:0 (truncated)...]
+2025-03-07T00:05:16.981+05:30  WARN 68 --- [ai] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T00:05:16.982+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T00:06:47.583+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T00:06:47.585+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T00:06:47.586+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T00:06:47.587+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T00:0 (truncated)...]
+2025-03-07T00:06:47.590+05:30  WARN 68 --- [ai] [http-nio-8083-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T00:06:47.590+05:30 DEBUG 68 --- [ai] [http-nio-8083-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T00:10:48.640+05:30  INFO 68 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T00:10:48.655+05:30  INFO 68 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T00:10:48.657+05:30  INFO 68 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T00:10:48.666+05:30  INFO 68 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T00:10:48.731+05:30  INFO 68 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T00:10:48.740+05:30  INFO 68 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T00:10:48.757+05:30  INFO 68 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T00:11:06.271+05:30  INFO 29560 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 29560 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T00:11:06.276+05:30 DEBUG 29560 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T00:11:06.278+05:30  INFO 29560 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T00:11:06.516+05:30  INFO 29560 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T00:11:06.517+05:30  INFO 29560 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T00:11:09.858+05:30  INFO 29560 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T00:11:10.308+05:30  INFO 29560 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 421 ms. Found 2 JPA repository interfaces.
+2025-03-07T00:11:12.991+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T00:11:13.044+05:30  INFO 29560 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:11:13.045+05:30  INFO 29560 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:11:13.308+05:30  INFO 29560 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:11:13.310+05:30  INFO 29560 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6785 ms
+2025-03-07T00:11:14.213+05:30 DEBUG 29560 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T00:11:15.078+05:30  INFO 29560 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T00:11:15.389+05:30  INFO 29560 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T00:11:15.514+05:30  INFO 29560 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T00:11:16.548+05:30  INFO 29560 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T00:11:16.627+05:30  INFO 29560 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T00:11:17.228+05:30  INFO 29560 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5648144a
+2025-03-07T00:11:17.232+05:30  INFO 29560 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T00:11:17.378+05:30  WARN 29560 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T00:11:17.453+05:30  INFO 29560 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T00:11:21.172+05:30  INFO 29560 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T00:11:21.554+05:30  INFO 29560 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T00:11:24.308+05:30  WARN 29560 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T00:11:24.663+05:30 DEBUG 29560 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:11:25.136+05:30 DEBUG 29560 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:11:25.244+05:30 DEBUG 29560 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:11:25.424+05:30 DEBUG 29560 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T00:11:26.635+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T00:11:26.861+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/api'
+2025-03-07T00:11:27.157+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T00:11:27.160+05:30  INFO 29560 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:11:27.160+05:30  INFO 29560 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:11:27.256+05:30  INFO 29560 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:11:27.257+05:30  INFO 29560 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 386 ms
+2025-03-07T00:11:27.298+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T00:11:27.331+05:30 DEBUG 29560 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:11:27.345+05:30 DEBUG 29560 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:11:27.367+05:30 DEBUG 29560 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:11:27.406+05:30  INFO 29560 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T00:11:27.444+05:30  INFO 29560 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 22.584 seconds (process running for 24.415)
+2025-03-07T00:13:08.706+05:30  INFO 29560 --- [ai] [http-nio-8083-exec-2] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-03-07T00:13:08.708+05:30  INFO 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServletRegistration'
+2025-03-07T00:13:08.709+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T00:13:08.710+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T00:13:08.711+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T00:13:08.712+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@38a386b2
+2025-03-07T00:13:08.713+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6a5f6b54
+2025-03-07T00:13:08.714+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T00:13:08.715+05:30  INFO 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-03-07T00:13:08.735+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T00:13:08.766+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T00:13:08.820+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T00:13:08.826+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T00:1 (truncated)...]
+2025-03-07T00:13:08.901+05:30  WARN 29560 --- [ai] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T00:13:08.904+05:30 DEBUG 29560 --- [ai] [http-nio-8083-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T00:15:22.262+05:30  INFO 29560 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T00:15:22.320+05:30  INFO 29560 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T00:15:22.324+05:30  INFO 29560 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T00:15:22.348+05:30  INFO 29560 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T00:15:22.455+05:30  INFO 29560 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T00:15:22.465+05:30  INFO 29560 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T00:15:22.519+05:30  INFO 29560 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T00:15:44.742+05:30  INFO 11432 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 11432 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T00:15:44.746+05:30 DEBUG 11432 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T00:15:44.750+05:30  INFO 11432 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T00:15:44.963+05:30  INFO 11432 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T00:15:44.964+05:30  INFO 11432 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T00:15:49.139+05:30  INFO 11432 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T00:15:49.795+05:30  INFO 11432 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 625 ms. Found 2 JPA repository interfaces.
+2025-03-07T00:15:52.589+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T00:15:52.629+05:30  INFO 11432 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:15:52.632+05:30  INFO 11432 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:15:52.810+05:30  INFO 11432 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:15:52.812+05:30  INFO 11432 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7844 ms
+2025-03-07T00:15:53.317+05:30 DEBUG 11432 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T00:15:53.743+05:30  INFO 11432 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T00:15:53.923+05:30  INFO 11432 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T00:15:54.067+05:30  INFO 11432 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T00:15:55.402+05:30  INFO 11432 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T00:15:55.556+05:30  INFO 11432 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T00:15:56.233+05:30  INFO 11432 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6e7b95b1
+2025-03-07T00:15:56.240+05:30  INFO 11432 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T00:15:56.410+05:30  WARN 11432 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T00:15:56.480+05:30  INFO 11432 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T00:15:59.785+05:30  INFO 11432 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T00:16:00.176+05:30  INFO 11432 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T00:16:02.480+05:30  WARN 11432 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T00:16:02.858+05:30 DEBUG 11432 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:16:03.052+05:30 DEBUG 11432 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:16:03.192+05:30 DEBUG 11432 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:16:03.368+05:30 DEBUG 11432 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T00:16:04.582+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T00:16:04.797+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/api'
+2025-03-07T00:16:05.088+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T00:16:05.090+05:30  INFO 11432 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T00:16:05.091+05:30  INFO 11432 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T00:16:05.202+05:30  INFO 11432 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T00:16:05.203+05:30  INFO 11432 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 395 ms
+2025-03-07T00:16:05.249+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T00:16:05.291+05:30 DEBUG 11432 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T00:16:05.312+05:30 DEBUG 11432 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T00:16:05.338+05:30 DEBUG 11432 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T00:16:05.374+05:30  INFO 11432 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T00:16:05.407+05:30  INFO 11432 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 22.577 seconds (process running for 26.248)
+2025-03-07T00:16:10.889+05:30  INFO 11432 --- [ai] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServletRegistration'
+2025-03-07T00:16:10.890+05:30  INFO 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServletRegistration'
+2025-03-07T00:16:10.891+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T00:16:10.893+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T00:16:10.894+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T00:16:10.895+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@69346372
+2025-03-07T00:16:10.895+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@33ab53a3
+2025-03-07T00:16:10.896+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T00:16:10.897+05:30  INFO 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-03-07T00:16:10.918+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T00:16:10.946+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T00:16:11.004+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T00:16:11.011+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T00:1 (truncated)...]
+2025-03-07T00:16:11.084+05:30  WARN 11432 --- [ai] [http-nio-8083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T00:16:11.087+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T03:18:56.496+05:30  WARN 11432 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h30s116ms370µs900ns).
+2025-03-07T12:14:52.276+05:30  WARN 11432 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h56m5s787ms416µs300ns).
+2025-03-07T12:31:43.954+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T12:31:43.960+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T12:31:43.961+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T12:31:43.962+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Failed to parse multipart servlet request, timestamp=2025-03-07T12:3 (truncated)...]
+2025-03-07T12:31:43.965+05:30  WARN 11432 --- [ai] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request]
+2025-03-07T12:31:43.966+05:30 DEBUG 11432 --- [ai] [http-nio-8083-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-03-07T12:38:50.922+05:30  INFO 11432 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T12:38:50.930+05:30  INFO 11432 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T12:38:50.931+05:30  INFO 11432 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T12:38:50.935+05:30  INFO 11432 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T12:38:50.991+05:30  INFO 11432 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T12:38:51.001+05:30  INFO 11432 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T12:38:51.015+05:30  INFO 11432 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T12:56:18.613+05:30  INFO 9120 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 9120 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T12:56:18.617+05:30 DEBUG 9120 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T12:56:18.620+05:30  INFO 9120 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T12:56:18.826+05:30  INFO 9120 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T12:56:18.827+05:30  INFO 9120 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T12:56:22.563+05:30  INFO 9120 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T12:56:23.063+05:30  INFO 9120 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 467 ms. Found 2 JPA repository interfaces.
+2025-03-07T12:56:25.760+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T12:56:25.831+05:30  INFO 9120 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T12:56:25.832+05:30  INFO 9120 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T12:56:26.029+05:30  INFO 9120 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T12:56:26.030+05:30  INFO 9120 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7200 ms
+2025-03-07T12:56:26.513+05:30 DEBUG 9120 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T12:56:26.974+05:30  INFO 9120 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T12:56:27.192+05:30  INFO 9120 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T12:56:27.376+05:30  INFO 9120 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T12:56:28.400+05:30  INFO 9120 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T12:56:28.564+05:30  INFO 9120 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T12:56:29.399+05:30  INFO 9120 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d1b0d0f
+2025-03-07T12:56:29.412+05:30  INFO 9120 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T12:56:29.749+05:30  WARN 9120 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T12:56:29.869+05:30  INFO 9120 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T12:56:33.545+05:30  INFO 9120 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T12:56:33.737+05:30  INFO 9120 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T12:56:36.840+05:30  WARN 9120 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T12:56:37.264+05:30 DEBUG 9120 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-03-07T12:56:37.458+05:30 DEBUG 9120 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T12:56:37.619+05:30 DEBUG 9120 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T12:56:37.816+05:30 DEBUG 9120 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T12:56:39.202+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T12:56:39.444+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-07T12:56:39.729+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T12:56:39.731+05:30  INFO 9120 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T12:56:39.733+05:30  INFO 9120 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T12:56:39.838+05:30  INFO 9120 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T12:56:39.839+05:30  INFO 9120 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 368 ms
+2025-03-07T12:56:39.887+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T12:56:39.933+05:30 DEBUG 9120 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T12:56:39.957+05:30 DEBUG 9120 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T12:56:40.000+05:30 DEBUG 9120 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T12:56:40.058+05:30  INFO 9120 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T12:56:40.094+05:30  INFO 9120 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 23.178 seconds (process running for 26.948)
+2025-03-07T12:57:11.013+05:30  INFO 9120 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-07T12:57:11.015+05:30  INFO 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-07T12:57:11.016+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T12:57:11.016+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T12:57:11.016+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T12:57:11.019+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@157271e4
+2025-03-07T12:57:11.021+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@33acebe2
+2025-03-07T12:57:11.022+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T12:57:11.022+05:30  INFO 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-03-07T12:57:11.069+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T12:57:11.153+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#uploadDocument(String, MultipartFile)
+2025-03-07T12:57:11.210+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] .m.m.a.RequestPartMethodArgumentResolver : Read "application/json" to ["{"name":"Test Document", "uploadedBy":"user123", "type":"PDF"}"]
+2025-03-07T12:57:11.424+05:30  INFO 9120 --- [ai] [http-nio-8082-exec-2] c.h.ai.controller.DocumentController     : Parsed JSON: DocumentRequest(name=Test Document, uploadedBy=user123, type=PDF)
+2025-03-07T12:57:11.449+05:30  INFO 9120 --- [ai] [task-1] c.h.ai.serviceimpl.DocumentServiceImpl   : Uploading document: Test Document
+2025-03-07T12:57:11.469+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/upload"
+2025-03-07T12:57:11.481+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T12:57:11.862+05:30 DEBUG 9120 --- [ai] [task-1] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/upload"
+2025-03-07T12:57:11.863+05:30 DEBUG 9120 --- [ai] [task-1] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/upload"
+2025-03-07T12:57:11.875+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T12:57:11.882+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,DocumentResponse(id=1, name=Test Document, type=PDF, sizeInBytes=47324, uploadedAt=2025-0 (truncated)...]
+2025-03-07T12:57:11.935+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T12:57:11.938+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DocumentResponse(id=1, name=Test Document, type=PDF, sizeInBytes=47324, uploadedAt=2025-03-07T12:57: (truncated)...]
+2025-03-07T12:57:11.987+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:06:38.688+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/documents/1", parameters={}
+2025-03-07T13:06:38.692+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#getDocument(Long)
+2025-03-07T13:06:38.704+05:30  INFO 9120 --- [ai] [task-2] c.h.ai.serviceimpl.DocumentServiceImpl   : Fetching document with ID: 1
+2025-03-07T13:06:38.705+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-6] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/1"
+2025-03-07T13:06:38.706+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:06:38.840+05:30 DEBUG 9120 --- [ai] [task-2] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/1"
+2025-03-07T13:06:38.841+05:30 DEBUG 9120 --- [ai] [task-2] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/1"
+2025-03-07T13:06:38.842+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for GET "/api/v1/documents/1", parameters={}
+2025-03-07T13:06:38.845+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,DocumentResponse(id=1, name=Test Document, type=PDF, sizeInBytes=47324, uploadedAt=2025-0 (truncated)...]
+2025-03-07T13:06:38.846+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T13:06:38.847+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DocumentResponse(id=1, name=Test Document, type=PDF, sizeInBytes=47324, uploadedAt=2025-03-07T12:57: (truncated)...]
+2025-03-07T13:06:38.851+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:07:19.971+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/documents/1", parameters={}
+2025-03-07T13:07:19.972+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#updateDocument(Long, DocumentRequest)
+2025-03-07T13:07:20.000+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DocumentRequest(name=Updated Document, uploadedBy=John Doe, type=WORD)]
+2025-03-07T13:07:20.004+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-8] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/1"
+2025-03-07T13:07:20.006+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:07:20.020+05:30 DEBUG 9120 --- [ai] [task-3] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/1"
+2025-03-07T13:07:20.021+05:30 DEBUG 9120 --- [ai] [task-3] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/1"
+2025-03-07T13:07:20.022+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for PUT "/api/v1/documents/1", parameters={}
+2025-03-07T13:07:20.024+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [java.lang.IllegalArgumentException: No enum constant com.huggingFace.ai.domain.enums.DocumentType.WO (truncated)...]
+2025-03-07T13:07:20.030+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T13:07:20.036+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T13:07:20.037+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: No enum constant com.huggingFace.ai.domain.enums.DocumentType.WORD,  (truncated)...]
+2025-03-07T13:07:20.049+05:30  WARN 9120 --- [ai] [http-nio-8082-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: No enum constant com.huggingFace.ai.domain.enums.DocumentType.WORD]
+2025-03-07T13:07:20.051+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 500
+2025-03-07T13:07:32.825+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/documents/1", parameters={}
+2025-03-07T13:07:32.826+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#updateDocument(Long, DocumentRequest)
+2025-03-07T13:07:32.829+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [DocumentRequest(name=Updated Document, uploadedBy=John Doe, type=TXT)]
+2025-03-07T13:07:32.831+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-1] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/1"
+2025-03-07T13:07:32.832+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:07:32.894+05:30 DEBUG 9120 --- [ai] [task-4] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/1"
+2025-03-07T13:07:32.895+05:30 DEBUG 9120 --- [ai] [task-4] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/1"
+2025-03-07T13:07:32.896+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for PUT "/api/v1/documents/1", parameters={}
+2025-03-07T13:07:32.898+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,DocumentResponse(id=1, name=Updated Document, type=TXT, sizeInBytes=47324, uploadedAt=202 (truncated)...]
+2025-03-07T13:07:32.899+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T13:07:32.900+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DocumentResponse(id=1, name=Updated Document, type=TXT, sizeInBytes=47324, uploadedAt=2025-03-07T12: (truncated)...]
+2025-03-07T13:07:32.902+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:07:56.007+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/documents/1/extract-text", parameters={}
+2025-03-07T13:07:56.008+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#extractText(Long)
+2025-03-07T13:07:56.011+05:30  INFO 9120 --- [ai] [task-5] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 1
+2025-03-07T13:07:56.011+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/1/extract-text"
+2025-03-07T13:07:56.012+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:07:56.032+05:30  INFO 9120 --- [ai] [task-5] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T13:07:56.059+05:30 DEBUG 9120 --- [ai] [task-5] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/1/extract-text"
+2025-03-07T13:07:56.060+05:30 DEBUG 9120 --- [ai] [task-5] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/1/extract-text"
+2025-03-07T13:07:56.061+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for GET "/api/v1/documents/1/extract-text", parameters={}
+2025-03-07T13:07:56.063+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: %20https://api-infe (truncated)...]
+2025-03-07T13:07:56.065+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-03-07T13:07:56.066+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T13:07:56.068+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Illegal character in scheme name at index 0: %20https://api-inferenc (truncated)...]
+2025-03-07T13:07:56.070+05:30  WARN 9120 --- [ai] [http-nio-8082-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: %20https://api-inference.huggingface.co/models/facebook/bart-large-cnn]
+2025-03-07T13:07:56.071+05:30 DEBUG 9120 --- [ai] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 500
+2025-03-07T13:16:42.752+05:30  INFO 9120 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T13:16:42.785+05:30  INFO 9120 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T13:16:42.787+05:30  INFO 9120 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-07T13:16:42.808+05:30  INFO 9120 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-07T13:16:42.902+05:30  INFO 9120 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T13:16:42.919+05:30  INFO 9120 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-07T13:16:42.935+05:30  INFO 9120 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-07T13:17:13.835+05:30  INFO 20932 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 20932 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-07T13:17:13.842+05:30 DEBUG 20932 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-07T13:17:13.844+05:30  INFO 20932 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-07T13:17:14.055+05:30  INFO 20932 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-07T13:17:14.056+05:30  INFO 20932 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-07T13:17:17.846+05:30  INFO 20932 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-07T13:17:18.596+05:30  INFO 20932 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 718 ms. Found 2 JPA repository interfaces.
+2025-03-07T13:17:21.836+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-07T13:17:21.877+05:30  INFO 20932 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T13:17:21.878+05:30  INFO 20932 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T13:17:22.122+05:30  INFO 20932 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-07T13:17:22.124+05:30  INFO 20932 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8065 ms
+2025-03-07T13:17:22.657+05:30 DEBUG 20932 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-07T13:17:23.200+05:30  INFO 20932 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-07T13:17:23.478+05:30  INFO 20932 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-07T13:17:23.617+05:30  INFO 20932 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-07T13:17:25.003+05:30  INFO 20932 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-07T13:17:25.182+05:30  INFO 20932 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-07T13:17:25.734+05:30  INFO 20932 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5648144a
+2025-03-07T13:17:25.738+05:30  INFO 20932 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-07T13:17:25.888+05:30  WARN 20932 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-07T13:17:25.972+05:30  INFO 20932 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-07T13:17:29.977+05:30  INFO 20932 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-07T13:17:30.500+05:30  INFO 20932 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-07T13:17:34.066+05:30  WARN 20932 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-07T13:17:34.445+05:30 DEBUG 20932 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 9 mappings in 'requestMappingHandlerMapping'
+2025-03-07T13:17:34.643+05:30 DEBUG 20932 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T13:17:34.803+05:30 DEBUG 20932 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T13:17:34.962+05:30 DEBUG 20932 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-07T13:17:36.533+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-07T13:17:37.032+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-07T13:17:37.379+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-07T13:17:37.382+05:30  INFO 20932 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-07T13:17:37.383+05:30  INFO 20932 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-07T13:17:37.512+05:30  INFO 20932 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-07T13:17:37.513+05:30  INFO 20932 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 468 ms
+2025-03-07T13:17:37.566+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-07T13:17:37.620+05:30 DEBUG 20932 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-07T13:17:37.650+05:30 DEBUG 20932 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-03-07T13:17:37.686+05:30 DEBUG 20932 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-07T13:17:37.721+05:30  INFO 20932 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-07T13:17:37.758+05:30  INFO 20932 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 25.641 seconds (process running for 27.419)
+2025-03-07T13:17:47.274+05:30  INFO 20932 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-07T13:17:47.275+05:30  INFO 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-07T13:17:47.277+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-07T13:17:47.278+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-07T13:17:47.279+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-07T13:17:47.282+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4c84f811
+2025-03-07T13:17:47.284+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4a656636
+2025-03-07T13:17:47.285+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-07T13:17:47.286+05:30  INFO 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-03-07T13:17:47.354+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/documents/1/extract-text", parameters={}
+2025-03-07T13:17:47.376+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#extractText(Long)
+2025-03-07T13:17:47.454+05:30  INFO 20932 --- [ai] [task-1] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 1
+2025-03-07T13:17:47.506+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/1/extract-text"
+2025-03-07T13:17:47.518+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:17:47.720+05:30  INFO 20932 --- [ai] [task-1] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T13:17:47.957+05:30 DEBUG 20932 --- [ai] [task-1] o.s.w.r.f.client.ExchangeFunctions       : [6b778f0a] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T13:17:50.470+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6b778f0a] Encoding [{inputs=%PDF-1.5<EOL>%����<EOL>3 0 obj<EOL><< /Linearized 1 /L 47324 /H [ 1137 155 ] /O 7 /E 46531 /N 1 /T 47043 (truncated)...]
+2025-03-07T13:17:51.335+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-2] o.s.w.r.f.client.ExchangeFunctions       : [6b778f0a] [7be32c94-1] Response 500 INTERNAL_SERVER_ERROR
+2025-03-07T13:17:51.390+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [6b778f0a] [7be32c94-1] Read 289 bytes
+2025-03-07T13:17:51.431+05:30 ERROR 20932 --- [ai] [reactor-http-nio-2] c.h.a.s.HuggingFaceServiceImpl           : Error calling Hugging Face API: 500 Internal Server Error from POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T13:17:51.434+05:30 DEBUG 20932 --- [ai] [task-1] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/1/extract-text"
+2025-03-07T13:17:51.435+05:30 DEBUG 20932 --- [ai] [task-1] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/1/extract-text"
+2025-03-07T13:17:51.451+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for GET "/api/v1/documents/1/extract-text", parameters={}
+2025-03-07T13:17:51.459+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,Error processing request: 500 Internal Server Error from POST https://api-inference.huggi (truncated)...]
+2025-03-07T13:17:51.504+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-07T13:17:51.513+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error processing request: 500 Internal Server Error from POST https://api-inference.huggingface.co/m (truncated)..."]
+2025-03-07T13:17:51.642+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:22:12.435+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T13:22:12.512+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#uploadDocument(String, MultipartFile)
+2025-03-07T13:22:12.521+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-6] .m.m.a.RequestPartMethodArgumentResolver : Read "application/json" to ["{"name":"Test Document", "uploadedBy":"user123", "type":"TXT"}"]
+2025-03-07T13:22:12.671+05:30  INFO 20932 --- [ai] [http-nio-8082-exec-6] c.h.ai.controller.DocumentController     : Parsed JSON: DocumentRequest(name=Test Document, uploadedBy=user123, type=TXT)
+2025-03-07T13:22:12.679+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-6] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/upload"
+2025-03-07T13:22:12.680+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:22:12.683+05:30  INFO 20932 --- [ai] [task-2] c.h.ai.serviceimpl.DocumentServiceImpl   : Uploading document: Test Document
+2025-03-07T13:22:12.827+05:30 DEBUG 20932 --- [ai] [task-2] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/upload"
+2025-03-07T13:22:12.828+05:30 DEBUG 20932 --- [ai] [task-2] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/upload"
+2025-03-07T13:22:12.830+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for POST "/api/v1/documents/upload", parameters={multipart}
+2025-03-07T13:22:12.833+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,DocumentResponse(id=2, name=Test Document, type=TXT, sizeInBytes=2048, uploadedAt=2025-03 (truncated)...]
+2025-03-07T13:22:12.868+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-03-07T13:22:12.869+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DocumentResponse(id=2, name=Test Document, type=TXT, sizeInBytes=2048, uploadedAt=2025-03-07T13:22:1 (truncated)...]
+2025-03-07T13:22:12.886+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:22:33.755+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/documents/2/extract-text", parameters={}
+2025-03-07T13:22:33.756+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#extractText(Long)
+2025-03-07T13:22:33.759+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-8] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/2/extract-text"
+2025-03-07T13:22:33.759+05:30  INFO 20932 --- [ai] [task-3] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 2
+2025-03-07T13:22:33.759+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:22:33.770+05:30  INFO 20932 --- [ai] [task-3] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T13:22:33.772+05:30 DEBUG 20932 --- [ai] [task-3] o.s.w.r.f.client.ExchangeFunctions       : [3c65675e] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T13:22:33.775+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-2] org.springframework.web.HttpLogging      : [3c65675e] Encoding [{inputs=now you are compleyrty worong the approvalid is for  @Id<EOL><EOL>    @GeneratedValue(strategy = Gen (truncated)...]
+2025-03-07T13:22:33.790+05:30  WARN 20932 --- [ai] [reactor-http-nio-2] r.netty.http.client.HttpClientConnect    : [7be32c94-2, L:/192.168.0.146:59647 - R:api-inference.huggingface.co/108.159.80.102:443] The connection observed an error
 
-***************************
-APPLICATION FAILED TO START
-***************************
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:403) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.implRead(SocketChannelImpl.java:435) ~[na:na]
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:493) ~[na:na]
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:255) ~[netty-buffer-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[netty-buffer-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:356) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:796) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:732) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:658) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[netty-transport-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:998) ~[netty-common-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.1.118.Final.jar:4.1.118.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.1.118.Final.jar:4.1.118.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
 
-Description:
-
-Failed to bind properties under 'spring.main.web-application-type' to org.springframework.boot.WebApplicationType:
-
-    Property: spring.main.web-application-type
-    Value: "servlet # Use 'reactive' if fully reactive, else 'servlet'"
-    Origin: class path resource [application.properties] - 61:34
-    Reason: failed to convert java.lang.String to org.springframework.boot.WebApplicationType (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.WebApplicationType.servlet # Use 'reactive' if fully reactive, else 'servlet')
-
-Action:
-
-Update your application's configuration. The following values are valid:
-
-    NONE
-    REACTIVE
-    SERVLET
-
+2025-03-07T13:22:33.819+05:30 ERROR 20932 --- [ai] [reactor-http-nio-2] c.h.a.s.HuggingFaceServiceImpl           : Error calling Hugging Face API: Connection reset
+2025-03-07T13:22:33.819+05:30 DEBUG 20932 --- [ai] [task-3] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/2/extract-text"
+2025-03-07T13:22:33.821+05:30 DEBUG 20932 --- [ai] [task-3] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/2/extract-text"
+2025-03-07T13:22:33.822+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for GET "/api/v1/documents/2/extract-text", parameters={}
+2025-03-07T13:22:33.824+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,Error processing request: Connection reset,[]>]
+2025-03-07T13:22:33.825+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-07T13:22:33.826+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["Error processing request: Connection reset"]
+2025-03-07T13:22:33.828+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200
+2025-03-07T13:25:29.566+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/documents/2/extract-text", parameters={}
+2025-03-07T13:25:29.569+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.DocumentController#extractText(Long)
+2025-03-07T13:25:29.573+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-1] o.s.w.c.request.async.WebAsyncManager    : Started async request for "/api/v1/documents/2/extract-text"
+2025-03-07T13:25:29.575+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting but response remains open for further handling
+2025-03-07T13:25:29.573+05:30  INFO 20932 --- [ai] [task-4] c.h.ai.serviceimpl.DocumentServiceImpl   : Extracting text from document with ID: 2
+2025-03-07T13:25:29.593+05:30  INFO 20932 --- [ai] [task-4] c.h.a.s.HuggingFaceServiceImpl           : Extracting text using model: facebook/bart-large-cnn
+2025-03-07T13:25:29.596+05:30 DEBUG 20932 --- [ai] [task-4] o.s.w.r.f.client.ExchangeFunctions       : [6e4b07c2] HTTP POST https://api-inference.huggingface.co/models/facebook/bart-large-cnn
+2025-03-07T13:25:29.908+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-3] org.springframework.web.HttpLogging      : [6e4b07c2] Encoding [{inputs=now you are compleyrty worong the approvalid is for  @Id<EOL><EOL>    @GeneratedValue(strategy = Gen (truncated)...]
+2025-03-07T13:25:34.884+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-3] o.s.w.r.f.client.ExchangeFunctions       : [6e4b07c2] [b6dc33eb-1] Response 200 OK
+2025-03-07T13:25:34.888+05:30 DEBUG 20932 --- [ai] [reactor-http-nio-3] org.springframework.web.HttpLogging      : [6e4b07c2] [b6dc33eb-1] Decoded "[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."
+2025-03-07T13:25:34.888+05:30 DEBUG 20932 --- [ai] [task-4] o.s.w.c.request.async.WebAsyncManager    : Async result set for "/api/v1/documents/2/extract-text"
+2025-03-07T13:25:34.889+05:30 DEBUG 20932 --- [ai] [task-4] o.s.w.c.request.async.WebAsyncManager    : Performing async dispatch for "/api/v1/documents/2/extract-text"
+2025-03-07T13:25:34.891+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : "ASYNC" dispatch for GET "/api/v1/documents/2/extract-text", parameters={}
+2025-03-07T13:25:34.893+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerAdapter : Resume with async result [<200 OK OK,[{"summary_text":"This is entity class for geric field, in that user add there approval e (truncated)...]
+2025-03-07T13:25:34.895+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json]
+2025-03-07T13:25:34.897+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing ["[{"summary_text":"This is entity class for geric field, in that user add there approval email by thi (truncated)..."]
+2025-03-07T13:25:34.899+05:30 DEBUG 20932 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ASYNC" dispatch, status 200

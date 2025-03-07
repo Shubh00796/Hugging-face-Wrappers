@@ -6,9 +6,8 @@ import com.huggingFace.ai.dto.response.DocumentResponse;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
-import org.mapstruct.ReportingPolicy;
 
-@Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
+@Mapper(componentModel = "spring")
 public interface DocumentMapper {
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "contentPath", ignore = true)

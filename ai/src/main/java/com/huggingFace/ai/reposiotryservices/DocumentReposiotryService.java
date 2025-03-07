@@ -1,6 +1,7 @@
-package com.huggingFace.ai.repository;
+package com.huggingFace.ai.reposiotryservices;
 
 import com.huggingFace.ai.domain.Document;
+import com.huggingFace.ai.repository.DocumentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
