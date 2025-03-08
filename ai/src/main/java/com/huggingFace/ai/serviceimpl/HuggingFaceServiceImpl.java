@@ -1,5 +1,8 @@
 package com.huggingFace.ai.serviceimpl;
 
+import com.huggingFace.ai.domain.enums.ContentAnalysisType;
+import com.huggingFace.ai.dto.request.ContentAnalysisRequest;
+import com.huggingFace.ai.dto.response.ContentAnalysisResponse;
 import com.huggingFace.ai.service.HuggingFaceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -8,9 +11,12 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -75,6 +81,8 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
         return callHuggingFaceApi(keyInsightsModel, requestBody);
     }
 
+
+
     private Mono<String> callHuggingFaceApi(String modelId, Map<String, Object> requestBody) {
         return huggingFaceWebClient.post()
                 .uri(modelId)
@@ -85,5 +93,112 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
                 .doOnError(error -> log.error("Error calling Hugging Face API: {}", error.getMessage()))
                 .onErrorResume(error -> Mono.just("Error processing request: " + error.getMessage()));
     }
+    public Mono<ContentAnalysisResponse> analyzeContent(ContentAnalysisRequest request) {
+        log.info("Processing content analysis: Type = {}, Model = {}", request.getType(), request.getModel());
+
+        Map<String, Object> requestBody = buildRequestBody(request);
+        String model = getModel(request);
+        String endpoint = getEndpoint(request);
+
+        return huggingFaceWebClient.post()
+                .uri("/models/{model}/{endpoint}", model, endpoint)
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(requestBody)
+                .retrieve()
+                .bodyToMono(Map.class)
+                .map(result -> buildResponse(request, result))
+                .onErrorResume(error -> {
+                    log.error("Hugging Face API error: {}", error.getMessage());
+                    return Mono.just(buildErrorResponse(request, error.getMessage()));
+                })
+                .subscribeOn(Schedulers.boundedElastic());
+    }
+
+    /**
+     * Determines the correct endpoint based on the analysis type.
+     */
+    private String getEndpoint(ContentAnalysisRequest request) {
+        return switch (request.getType()) {
+            case SENTIMENT -> "sentiment-analysis";
+            case CLASSIFICATION -> "text-classification";
+            case SUMMARIZATION -> "summarization";
+            case ENTITY_RECOGNITION -> "ner";
+            case QUESTION_ANSWERING -> "question-answering";
+            case TRANSLATION -> "translation";
+        };
+    }
+
+    /**
+     * Selects the appropriate model based on the analysis type or uses the provided model.
+     */
+    private String getModel(ContentAnalysisRequest request) {
+        if (request.getModel() != null && !request.getModel().isEmpty()) {
+            return request.getModel();
+        }
+
+        return switch (request.getType()) {
+            case SENTIMENT -> "distilbert-base-uncased-finetuned-sst-2-english";
+            case CLASSIFICATION -> "facebook/bart-large-mnli";
+            case SUMMARIZATION -> "facebook/bart-large-cnn";
+            case ENTITY_RECOGNITION -> "dbmdz/bert-large-cased-finetuned-conll03-english";
+            case QUESTION_ANSWERING -> "deepset/roberta-base-squad2";
+            case TRANSLATION -> "t5-base";
+        };
+    }
+
+    /**
+     * Builds the request body for the API call.
+     */
+    private Map<String, Object> buildRequestBody(ContentAnalysisRequest request) {
+        Map<String, Object> body = new HashMap<>();
+        body.put("inputs", request.getContent());
+
+        if (request.getType() == ContentAnalysisType.QUESTION_ANSWERING) {
+            if (request.getOptions() == null || !request.getOptions().containsKey("question") || !request.getOptions().containsKey("context")) {
+                throw new IllegalArgumentException("Question Answering requires 'question' and 'context' in options.");
+            }
+            body.put("question", request.getOptions().get("question"));
+            body.put("context", request.getOptions().get("context"));
+        }
+
+        if (request.getOptions() != null) {
+            body.putAll(request.getOptions());
+        }
+
+        return body;
+    }
+
+    /**
+     * Builds a successful response.
+     */
+    private ContentAnalysisResponse buildResponse(ContentAnalysisRequest request, Map<String, Object> result) {
+        return ContentAnalysisResponse.builder()
+                .id(UUID.randomUUID())
+                .type(request.getType().name())
+                .result(result)
+                .modelUsed(getModel(request))
+                .processingTime(System.currentTimeMillis())
+                .createdAt(LocalDateTime.now())
+                .status("SUCCESS")
+                .errorMessage(null)
+                .build();
+    }
+
+    /**
+     * Builds an error response in case of failure.
+     */
+    private ContentAnalysisResponse buildErrorResponse(ContentAnalysisRequest request, String errorMessage) {
+        return ContentAnalysisResponse.builder()
+                .id(UUID.randomUUID())
+                .type(request.getType().name())
+                .result(null)
+                .modelUsed(getModel(request))
+                .processingTime(System.currentTimeMillis())
+                .createdAt(LocalDateTime.now())
+                .status("FAILED")
+                .errorMessage(errorMessage)
+                .build();
+    }
+
 
 }
