@@ -1,5 +1,6 @@
 package com.huggingFace.ai.domain;
 
+import com.huggingFace.ai.domain.enums.ContentAnalysisStatus;
 import com.huggingFace.ai.domain.enums.ContentAnalysisType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -44,9 +45,13 @@ public class ContentAnalysis {
     @Column(name = "project_id")
     private UUID projectId;
 
+    @Column(name = "statusRype")
+    @Enumerated(EnumType.STRING)
+    private ContentAnalysisType statusType;
+
     @Column(name = "status")
     @Enumerated(EnumType.STRING)
-    private ContentAnalysisType status;
+    private ContentAnalysisStatus status;
 
     @Column(name = "error_message")
     private String errorMessage;

@@ -1,4 +1,57 @@
-2025-03-08T00:21:51.757+05:30  WARN 29948 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h42m462ms780µs).
-2025-03-08T14:22:46.576+05:30  WARN 29948 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12h27m29s978ms702µs900ns).
-2025-03-08T18:46:57.804+05:30  WARN 29948 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h34m6s183ms689µs400ns).
-2025-03-08T23:10:25.007+05:30  WARN 29948 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h54m27s351ms585µs100ns).
+2025-03-10T12:10:57.150+05:30  WARN 29948 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20h56m25s451ms669µs100ns).
+2025-03-10T13:53:13.188+05:30  INFO 29948 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T13:53:13.244+05:30  INFO 29948 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T13:53:13.249+05:30  INFO 29948 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-10T13:53:13.261+05:30  INFO 29948 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-10T13:53:13.647+05:30  INFO 29948 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T13:53:13.669+05:30  INFO 29948 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-10T13:53:13.675+05:30  INFO 29948 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-10T13:53:29.554+05:30  INFO 29172 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 29172 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-10T13:53:29.558+05:30 DEBUG 29172 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-10T13:53:29.560+05:30  INFO 29172 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-10T13:53:29.716+05:30  INFO 29172 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-10T13:53:29.717+05:30  INFO 29172 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-10T13:53:32.452+05:30  INFO 29172 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-10T13:53:32.792+05:30  INFO 29172 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 322 ms. Found 4 JPA repository interfaces.
+2025-03-10T13:53:34.636+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-10T13:53:34.670+05:30  INFO 29172 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T13:53:34.670+05:30  INFO 29172 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T13:53:34.813+05:30  INFO 29172 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-10T13:53:34.814+05:30  INFO 29172 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5095 ms
+2025-03-10T13:53:35.183+05:30 DEBUG 29172 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-10T13:53:35.603+05:30  INFO 29172 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-10T13:53:35.796+05:30  INFO 29172 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-10T13:53:35.915+05:30  INFO 29172 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-10T13:53:36.485+05:30  INFO 29172 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-10T13:53:36.542+05:30  INFO 29172 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-10T13:53:36.832+05:30  INFO 29172 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6605e09d
+2025-03-10T13:53:36.835+05:30  INFO 29172 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-10T13:53:36.988+05:30  WARN 29172 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-10T13:53:37.026+05:30  INFO 29172 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-10T13:53:38.524+05:30  INFO 29172 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-10T13:53:39.463+05:30  INFO 29172 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-10T13:53:41.307+05:30  WARN 29172 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-10T13:53:41.625+05:30 DEBUG 29172 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 21 mappings in 'requestMappingHandlerMapping'
+2025-03-10T13:53:41.779+05:30 DEBUG 29172 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-03-10T13:53:41.905+05:30 DEBUG 29172 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-10T13:53:42.061+05:30 DEBUG 29172 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-10T13:53:43.367+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-10T13:53:43.505+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-10T13:53:43.688+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-10T13:53:43.690+05:30  INFO 29172 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-10T13:53:43.690+05:30  INFO 29172 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-10T13:53:43.768+05:30  INFO 29172 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-10T13:53:43.769+05:30  INFO 29172 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 258 ms
+2025-03-10T13:53:43.802+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-10T13:53:43.847+05:30 DEBUG 29172 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-10T13:53:43.858+05:30 DEBUG 29172 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-03-10T13:53:43.878+05:30 DEBUG 29172 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-10T13:53:43.898+05:30  INFO 29172 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-10T13:53:43.942+05:30  INFO 29172 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 15.623 seconds (process running for 18.018)
