@@ -1,1 +1,75 @@
 2025-03-11T12:45:22.947+05:30  WARN 29172 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14h5m26s607ms532µs400ns).
+2025-03-11T13:17:28.709+05:30  INFO 29172 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T13:17:28.734+05:30  INFO 29172 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T13:17:28.738+05:30  INFO 29172 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T13:17:28.753+05:30  INFO 29172 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T13:17:28.977+05:30  INFO 29172 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T13:17:29.033+05:30  INFO 29172 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T13:17:29.055+05:30  INFO 29172 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T13:17:39.220+05:30  INFO 26992 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 26992 (C:\Users\shuvijay\Downloads\ai\ai\target\classes started by shuvijay in C:\Users\shuvijay\Downloads\ai)
+2025-03-11T13:17:39.226+05:30 DEBUG 26992 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T13:17:39.227+05:30  INFO 26992 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T13:17:39.360+05:30  INFO 26992 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-11T13:17:39.361+05:30  INFO 26992 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-11T13:17:41.582+05:30  INFO 26992 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T13:17:41.844+05:30  INFO 26992 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 246 ms. Found 4 JPA repository interfaces.
+2025-03-11T13:17:43.428+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-03-11T13:17:43.450+05:30  INFO 26992 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T13:17:43.451+05:30  INFO 26992 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T13:17:43.577+05:30  INFO 26992 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T13:17:43.578+05:30  INFO 26992 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4215 ms
+2025-03-11T13:17:43.903+05:30 DEBUG 26992 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-03-11T13:17:44.238+05:30  INFO 26992 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T13:17:44.385+05:30  INFO 26992 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T13:17:44.451+05:30  INFO 26992 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T13:17:44.997+05:30  INFO 26992 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T13:17:45.051+05:30  INFO 26992 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T13:17:45.330+05:30  INFO 26992 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7cfceb5b
+2025-03-11T13:17:45.334+05:30  INFO 26992 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T13:17:45.417+05:30  WARN 26992 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T13:17:45.452+05:30  INFO 26992 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T13:17:46.948+05:30  INFO 26992 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T13:17:47.068+05:30  INFO 26992 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T13:17:48.950+05:30  WARN 26992 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T13:17:49.241+05:30 DEBUG 26992 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 26 mappings in 'requestMappingHandlerMapping'
+2025-03-11T13:17:49.377+05:30 DEBUG 26992 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-03-11T13:17:49.477+05:30 DEBUG 26992 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-11T13:17:49.598+05:30 DEBUG 26992 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-03-11T13:17:50.701+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-11T13:17:50.884+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-03-11T13:17:51.098+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-03-11T13:17:51.100+05:30  INFO 26992 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T13:17:51.101+05:30  INFO 26992 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T13:17:51.177+05:30  INFO 26992 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-03-11T13:17:51.177+05:30  INFO 26992 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 284 ms
+2025-03-11T13:17:51.214+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-03-11T13:17:51.249+05:30 DEBUG 26992 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-03-11T13:17:51.261+05:30 DEBUG 26992 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-03-11T13:17:51.276+05:30 DEBUG 26992 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-03-11T13:17:51.300+05:30  INFO 26992 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-03-11T13:17:51.343+05:30  INFO 26992 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 12.938 seconds (process running for 14.0)
+2025-03-11T13:20:42.144+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T13:20:42.145+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T13:20:42.145+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-03-11T13:20:42.145+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-03-11T13:20:42.145+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-03-11T13:20:42.149+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6bc87e91
+2025-03-11T13:20:42.150+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@318a352e
+2025-03-11T13:20:42.150+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-03-11T13:20:42.151+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-03-11T13:20:42.186+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/projects", parameters={}
+2025-03-11T13:20:42.194+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.ProjectController#createProject(ProjectRequest)
+2025-03-11T13:20:42.339+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ProjectRequest(name=AI Research Project, description=A project for AI-based document analysis)]
+2025-03-11T13:20:42.443+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] c.h.ai.controller.ProjectController      : Creating new project: AI Research Project
+2025-03-11T13:20:42.458+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] c.h.ai.serviceimpl.ProjectServiceImpl    : Creating new project: AI Research Project
+2025-03-11T13:20:42.719+05:30  INFO 26992 --- [ai] [http-nio-8082-exec-1] c.h.ai.serviceimpl.ProjectServiceImpl    : Project created with ID: 9f22546a-1764-4f18-89b9-123f5d33ebf6
+2025-03-11T13:20:42.804+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-03-11T13:20:42.809+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [ProjectResponse(id=9f22546a-1764-4f18-89b9-123f5d33ebf6, name=AI Research Project, description=A pro (truncated)...]
+2025-03-11T13:20:42.827+05:30 DEBUG 26992 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
