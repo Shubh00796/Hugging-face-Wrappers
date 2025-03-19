@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -16,7 +17,7 @@ import java.util.UUID;
 public class ContentAnalysisResponse {
     private UUID id;
     private String type;
-    private Map<String, Object> result;
+    private List<Map<String, Object>> result;
     private String modelUsed;
     private Long processingTime;
     private LocalDateTime createdAt;

@@ -7,6 +7,7 @@ import com.huggingFace.ai.service.HuggingFaceService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -14,9 +15,7 @@ import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Service
 @RequiredArgsConstructor
@@ -98,15 +97,14 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
 
         Map<String, Object> requestBody = buildRequestBody(request);
         String model = getModel(request);
-        String endpoint = getEndpoint(request);
 
         return huggingFaceWebClient.post()
-                .uri("/models/{model}/{endpoint}", model, endpoint)
+                .uri("/{model}", model)
                 .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(requestBody)
                 .retrieve()
-                .bodyToMono(Map.class)
-                .map(result -> buildResponse(request, result))
+                .bodyToMono(new ParameterizedTypeReference<List<Map<String, Object>>>() {})  // ✅ Expecting a List<Map>
+                .map(result -> buildResponse(request, result))  // ✅ Pass the whole list
                 .onErrorResume(error -> {
                     log.error("Hugging Face API error: {}", error.getMessage());
                     return Mono.just(buildErrorResponse(request, error.getMessage()));
@@ -114,28 +112,10 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
                 .subscribeOn(Schedulers.boundedElastic());
     }
 
-    /**
-     * Determines the correct endpoint based on the analysis type.
-     */
-    private String getEndpoint(ContentAnalysisRequest request) {
-        return switch (request.getType()) {
-            case SENTIMENT -> "sentiment-analysis";
-            case CLASSIFICATION -> "text-classification";
-            case SUMMARIZATION -> "summarization";
-            case ENTITY_RECOGNITION -> "ner";
-            case QUESTION_ANSWERING -> "question-answering";
-            case TRANSLATION -> "translation";
-        };
-    }
-
-    /**
-     * Selects the appropriate model based on the analysis type or uses the provided model.
-     */
     private String getModel(ContentAnalysisRequest request) {
         if (request.getModel() != null && !request.getModel().isEmpty()) {
             return request.getModel();
         }
-
         return switch (request.getType()) {
             case SENTIMENT -> "distilbert-base-uncased-finetuned-sst-2-english";
             case CLASSIFICATION -> "facebook/bart-large-mnli";
@@ -146,9 +126,6 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
         };
     }
 
-    /**
-     * Builds the request body for the API call.
-     */
     private Map<String, Object> buildRequestBody(ContentAnalysisRequest request) {
         Map<String, Object> body = new HashMap<>();
         body.put("inputs", request.getContent());
@@ -161,21 +138,18 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
             body.put("context", request.getOptions().get("context"));
         }
 
-        if (request.getOptions() != null) {
+        if (request.getOptions() != null && !request.getOptions().isEmpty()) {
             body.putAll(request.getOptions());
         }
 
         return body;
     }
 
-    /**
-     * Builds a successful response.
-     */
-    private ContentAnalysisResponse buildResponse(ContentAnalysisRequest request, Map<String, Object> result) {
+    private ContentAnalysisResponse buildResponse(ContentAnalysisRequest request, List<Map<String, Object>> result) {
         return ContentAnalysisResponse.builder()
                 .id(UUID.randomUUID())
                 .type(request.getType().name())
-                .result(result)
+                .result(result)  // ✅ Now stores full list instead of a single Map
                 .modelUsed(getModel(request))
                 .processingTime(System.currentTimeMillis())
                 .createdAt(LocalDateTime.now())
@@ -184,21 +158,16 @@ public class HuggingFaceServiceImpl implements HuggingFaceService {
                 .build();
     }
 
-    /**
-     * Builds an error response in case of failure.
-     */
     private ContentAnalysisResponse buildErrorResponse(ContentAnalysisRequest request, String errorMessage) {
         return ContentAnalysisResponse.builder()
                 .id(UUID.randomUUID())
                 .type(request.getType().name())
-                .result(null)
+                .result(Collections.emptyList())  // ✅ Ensures result is never null
                 .modelUsed(getModel(request))
                 .processingTime(System.currentTimeMillis())
                 .createdAt(LocalDateTime.now())
-                .status("FAILED")
+                .status("FAILURE")
                 .errorMessage(errorMessage)
                 .build();
     }
-
-
 }

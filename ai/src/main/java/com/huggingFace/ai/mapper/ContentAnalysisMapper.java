@@ -8,6 +8,7 @@ import com.huggingFace.ai.dto.response.ContentAnalysisResponse;
 import com.huggingFace.ai.domain.enums.ContentAnalysisType;
 import org.mapstruct.*;
 
+import java.util.List;
 import java.util.Map;
 
 @Mapper(componentModel = "spring", injectionStrategy = InjectionStrategy.CONSTRUCTOR)
@@ -28,7 +29,7 @@ public interface ContentAnalysisMapper {
 
     @Mapping(target = "id", source = "id")
     @Mapping(target = "type", source = "type")
-    @Mapping(target = "result", source = "resultContent", qualifiedByName = "jsonToMap")
+    @Mapping(target = "result", source = "resultContent", qualifiedByName = "jsonToListMap")
     @Mapping(target = "modelUsed", source = "modelUsed")
     @Mapping(target = "processingTime", source = "processingTime")
     @Mapping(target = "createdAt", source = "createdAt")
@@ -41,13 +42,13 @@ public interface ContentAnalysisMapper {
         return type != null ? type.name() : null;
     }
 
-    @Named("jsonToMap")
-    default Map<String, Object> jsonToMap(String json) {
+    @Named("jsonToListMap")
+    default List<Map<String, Object>> jsonToListMap(String json) {
         if (json == null || json.isEmpty()) {
             return null;
         }
         try {
-            return new ObjectMapper().readValue(json, Map.class);
+            return new ObjectMapper().readValue(json, List.class);
         } catch (JsonProcessingException e) {
             throw new IllegalArgumentException("Invalid JSON content", e);
         }
