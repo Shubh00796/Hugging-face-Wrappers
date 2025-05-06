@@ -18,10 +18,10 @@ import java.util.concurrent.TimeUnit;
 @Configuration
 public class HuggingFaceConfig {
 
-    @Value("${huggingface.api.token}")
+    @Value("${HUGGING_FACE_API_TOKEN}")
     private String apiToken;
 
-    @Value("${huggingface.api.base-url}")
+    @Value("${HUGGING_FACE_API_BASE_URL}")
     private String baseUrl;
 
     @Bean
