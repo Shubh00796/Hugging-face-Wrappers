@@ -1,2 +1,167 @@
-2025-05-07T05:03:58.497+05:30  WARN 22356 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h29s964ms795µs400ns).
-2025-05-07T09:58:40.579+05:30  WARN 22356 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h54m52s809ms484µs100ns).
+2025-05-08T10:33:01.833+05:30  WARN 22356 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h19m17s923ms632µs).
+2025-05-08T11:10:39.219+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08T11:10:39.248+05:30  INFO 22356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-08T11:10:39.264+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08T11:10:39.292+05:30  INFO 22356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-08T11:10:39.437+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08T11:10:39.453+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-08T11:10:39.461+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-08T13:33:43.143+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 13868 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-08T13:33:43.148+05:30 DEBUG 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-08T13:33:43.149+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-08T13:33:43.317+05:30  INFO 13868 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08T13:33:43.317+05:30  INFO 13868 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08T13:33:45.942+05:30  INFO 13868 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08T13:33:46.296+05:30  INFO 13868 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 341 ms. Found 5 JPA repository interfaces.
+2025-05-08T13:33:49.368+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-08T13:33:49.398+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-08T13:33:49.399+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-08T13:33:49.651+05:30  INFO 13868 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-08T13:33:49.652+05:30  INFO 13868 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6333 ms
+2025-05-08T13:33:49.968+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-08T13:33:50.257+05:30  INFO 13868 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-08T13:33:50.458+05:30  INFO 13868 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-08T13:33:50.574+05:30  INFO 13868 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-08T13:33:51.131+05:30  INFO 13868 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08T13:33:51.176+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-08T13:33:51.540+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1583053e
+2025-05-08T13:33:51.542+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-08T13:33:51.667+05:30  WARN 13868 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-08T13:33:51.697+05:30  INFO 13868 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-08T13:33:52.900+05:30  INFO 13868 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-08T13:33:53.209+05:30  INFO 13868 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-08T13:33:53.517+05:30  INFO 13868 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08T13:33:55.548+05:30  WARN 13868 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08T13:33:55.866+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2025-05-08T13:33:55.996+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-08T13:33:56.095+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-08T13:33:56.223+05:30 DEBUG 13868 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-08T13:33:57.449+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-08T13:33:57.613+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-05-08T13:33:57.824+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-05-08T13:33:57.826+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-08T13:33:57.827+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-08T13:33:57.895+05:30  INFO 13868 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-08T13:33:57.896+05:30  INFO 13868 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 273 ms
+2025-05-08T13:33:57.923+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-08T13:33:57.960+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-05-08T13:33:57.974+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-08T13:33:57.997+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-08T13:33:58.022+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-05-08T13:33:58.058+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 15.883 seconds (process running for 17.499)
+2025-05-08T13:44:49.810+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08T13:44:49.812+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-08T13:44:49.813+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-08T13:44:49.813+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-08T13:44:49.814+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-08T13:44:49.818+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c454d66
+2025-05-08T13:44:49.821+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5aa57f2b
+2025-05-08T13:44:49.822+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-08T13:44:49.823+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2025-05-08T13:44:49.881+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
+2025-05-08T13:44:49.897+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
+2025-05-08T13:44:50.198+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.huggingFace.ai.dto.EcartOrderDTO> com.huggingFace.ai.controller.EcartOrderController.createOrder(com.huggingFace.ai.dto.EcartOrderDTO): JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+2025-05-08T13:44:50.202+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-05-08T13:44:50.231+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-08T13:44:50.234+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: JSON parse error: Unexpected character ('}' (code 125)): was expecti (truncated)...]
+2025-05-08T13:44:50.269+05:30  WARN 13868 --- [ai] [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
+2025-05-08T13:44:50.272+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-05-08T13:44:57.733+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
+2025-05-08T13:44:57.734+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
+2025-05-08T13:44:57.739+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-123, orderDate=2022-01-01T12:00, status=null)]
+2025-05-08T13:44:58.017+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-08T13:44:58.018+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-123, orderDate=2025-05-08T13:44:57.782688, status=PROCESSING)]
+2025-05-08T13:44:58.023+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-05-08T13:47:29.407+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
+2025-05-08T13:47:29.409+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
+2025-05-08T13:47:29.412+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=null, orderNumber=ORD-1233, orderDate=2022-01-01T12:00, status=null)]
+2025-05-08T13:47:29.421+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-05-08T13:47:29.422+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-08T13:47:29.422+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Bin ID cannot be null, timestamp=2025-05-08T13:47:29.421474, status= (truncated)...]
+2025-05-08T13:47:29.424+05:30  WARN 13868 --- [ai] [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Bin ID cannot be null]
+2025-05-08T13:47:29.425+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-05-08T13:47:45.473+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
+2025-05-08T13:47:45.474+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
+2025-05-08T13:47:45.477+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
+2025-05-08T13:47:45.492+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-08T13:47:45.493+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-1238, orderDate=2025-05-08T13:47:45.480338600, status=PROCESS (truncated)...]
+2025-05-08T13:47:45.496+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-05-08T13:50:11.936+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08T13:50:11.952+05:30  INFO 13868 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-08T13:50:11.953+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-08T13:50:11.966+05:30  INFO 13868 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-08T13:50:12.029+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08T13:50:12.039+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-08T13:50:12.053+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-08T13:50:22.460+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 14884 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-08T13:50:22.465+05:30 DEBUG 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-08T13:50:22.466+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-08T13:50:22.677+05:30  INFO 14884 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-08T13:50:22.678+05:30  INFO 14884 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-08T13:50:26.445+05:30  INFO 14884 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-08T13:50:26.944+05:30  INFO 14884 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 476 ms. Found 5 JPA repository interfaces.
+2025-05-08T13:50:30.092+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-08T13:50:30.133+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-08T13:50:30.135+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-08T13:50:30.407+05:30  INFO 14884 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-08T13:50:30.408+05:30  INFO 14884 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7724 ms
+2025-05-08T13:50:30.903+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-08T13:50:31.495+05:30  INFO 14884 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-08T13:50:31.666+05:30  INFO 14884 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-08T13:50:31.763+05:30  INFO 14884 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-08T13:50:32.607+05:30  INFO 14884 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-08T13:50:32.687+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-08T13:50:33.027+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c2ea64a
+2025-05-08T13:50:33.031+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-08T13:50:33.130+05:30  WARN 14884 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-08T13:50:33.178+05:30  INFO 14884 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-08T13:50:34.905+05:30  INFO 14884 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-08T13:50:35.334+05:30  INFO 14884 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-08T13:50:35.484+05:30  INFO 14884 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-08T13:50:38.261+05:30  WARN 14884 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-08T13:50:38.675+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
+2025-05-08T13:50:38.880+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-08T13:50:39.061+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-08T13:50:39.229+05:30 DEBUG 14884 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-08T13:50:41.076+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-08T13:50:41.350+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-05-08T13:50:41.694+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-05-08T13:50:41.698+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-08T13:50:41.699+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-08T13:50:41.832+05:30  INFO 14884 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-08T13:50:41.832+05:30  INFO 14884 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 467 ms
+2025-05-08T13:50:41.880+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-08T13:50:41.940+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-05-08T13:50:41.958+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-08T13:50:41.988+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-08T13:50:42.026+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-05-08T13:50:42.073+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 21.01 seconds (process running for 22.894)
+2025-05-08T13:51:51.968+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-08T13:51:51.970+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-08T13:51:51.971+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-08T13:51:51.972+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-08T13:51:51.974+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-08T13:51:51.978+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b1e0686
+2025-05-08T13:51:51.979+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3987ad29
+2025-05-08T13:51:51.980+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-08T13:51:51.981+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2025-05-08T13:51:52.058+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
+2025-05-08T13:51:52.069+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
+2025-05-08T13:51:52.349+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
+2025-05-08T13:51:52.641+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-08T13:51:52.643+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
+2025-05-08T13:51:52.666+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
