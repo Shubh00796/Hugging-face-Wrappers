@@ -1,33 +1,33 @@
-2025-05-08T10:33:01.833+05:30  WARN 22356 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8h19m17s923ms632µs).
-2025-05-08T11:10:39.219+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-08T11:10:39.248+05:30  INFO 22356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-08T11:10:39.264+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-08T11:10:39.292+05:30  INFO 22356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-08T11:10:39.437+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-08T11:10:39.453+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-08T11:10:39.461+05:30  INFO 22356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-08T13:33:43.143+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 13868 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
-2025-05-08T13:33:43.148+05:30 DEBUG 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-05-08T13:33:43.149+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-05-08T13:33:43.317+05:30  INFO 13868 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-08T13:33:43.317+05:30  INFO 13868 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-08T13:33:45.942+05:30  INFO 13868 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-08T13:33:46.296+05:30  INFO 13868 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 341 ms. Found 5 JPA repository interfaces.
-2025-05-08T13:33:49.368+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
-2025-05-08T13:33:49.398+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-08T13:33:49.399+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-05-08T13:33:49.651+05:30  INFO 13868 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-08T13:33:49.652+05:30  INFO 13868 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6333 ms
-2025-05-08T13:33:49.968+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-05-08T13:33:50.257+05:30  INFO 13868 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-08T13:33:50.458+05:30  INFO 13868 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-05-08T13:33:50.574+05:30  INFO 13868 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-08T13:33:51.131+05:30  INFO 13868 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-08T13:33:51.176+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-08T13:33:51.540+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1583053e
-2025-05-08T13:33:51.542+05:30  INFO 13868 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-08T13:33:51.667+05:30  WARN 13868 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-08T13:33:51.697+05:30  INFO 13868 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T11:58:37.130+05:30  WARN 14884 --- [ai] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h9m51s423ms895µs400ns).
+2025-05-10T12:53:27.031+05:30  INFO 14884 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T12:53:27.070+05:30  INFO 14884 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T12:53:27.073+05:30  INFO 14884 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T12:53:27.099+05:30  INFO 14884 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T12:53:27.375+05:30  INFO 14884 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T12:53:27.411+05:30  INFO 14884 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T12:53:27.430+05:30  INFO 14884 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T12:53:42.149+05:30  INFO 29112 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 29112 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T12:53:42.155+05:30 DEBUG 29112 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T12:53:42.158+05:30  INFO 29112 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T12:53:42.353+05:30  INFO 29112 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T12:53:42.354+05:30  INFO 29112 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T12:53:46.252+05:30  INFO 29112 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T12:53:46.687+05:30  INFO 29112 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 413 ms. Found 6 JPA repository interfaces.
+2025-05-10T12:53:49.313+05:30  INFO 29112 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-10T12:53:49.359+05:30  INFO 29112 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T12:53:49.360+05:30  INFO 29112 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T12:53:49.560+05:30  INFO 29112 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T12:53:49.561+05:30  INFO 29112 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7205 ms
+2025-05-10T12:53:50.086+05:30 DEBUG 29112 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-10T12:53:50.551+05:30  INFO 29112 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T12:53:50.748+05:30  INFO 29112 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-10T12:53:50.826+05:30  INFO 29112 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T12:53:51.534+05:30  INFO 29112 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T12:53:51.592+05:30  INFO 29112 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T12:53:51.925+05:30  INFO 29112 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5316d793
+2025-05-10T12:53:51.928+05:30  INFO 29112 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T12:53:52.031+05:30  WARN 29112 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T12:53:52.071+05:30  INFO 29112 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.33
@@ -35,93 +35,170 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-08T13:33:52.900+05:30  INFO 13868 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
-2025-05-08T13:33:53.209+05:30  INFO 13868 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-08T13:33:53.517+05:30  INFO 13868 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-08T13:33:55.548+05:30  WARN 13868 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-08T13:33:55.866+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
-2025-05-08T13:33:55.996+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2025-05-08T13:33:56.095+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-05-08T13:33:56.223+05:30 DEBUG 13868 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-05-08T13:33:57.449+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-08T13:33:57.613+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
-2025-05-08T13:33:57.824+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2025-05-08T13:33:57.826+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-08T13:33:57.827+05:30  INFO 13868 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-05-08T13:33:57.895+05:30  INFO 13868 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-05-08T13:33:57.896+05:30  INFO 13868 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 273 ms
-2025-05-08T13:33:57.923+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
-2025-05-08T13:33:57.960+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
-2025-05-08T13:33:57.974+05:30 DEBUG 13868 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2025-05-08T13:33:57.997+05:30 DEBUG 13868 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-05-08T13:33:58.022+05:30  INFO 13868 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
-2025-05-08T13:33:58.058+05:30  INFO 13868 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 15.883 seconds (process running for 17.499)
-2025-05-08T13:44:49.810+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-08T13:44:49.812+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-08T13:44:49.813+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-05-08T13:44:49.813+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-05-08T13:44:49.814+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-05-08T13:44:49.818+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2c454d66
-2025-05-08T13:44:49.821+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@5aa57f2b
-2025-05-08T13:44:49.822+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-05-08T13:44:49.823+05:30  INFO 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2025-05-08T13:44:49.881+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
-2025-05-08T13:44:49.897+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
-2025-05-08T13:44:50.198+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.method.HandlerMethod             : Could not resolve parameter [0] in public org.springframework.http.ResponseEntity<com.huggingFace.ai.dto.EcartOrderDTO> com.huggingFace.ai.controller.EcartOrderController.createOrder(com.huggingFace.ai.dto.EcartOrderDTO): JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
-2025-05-08T13:44:50.202+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
-2025-05-08T13:44:50.231+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-05-08T13:44:50.234+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: JSON parse error: Unexpected character ('}' (code 125)): was expecti (truncated)...]
-2025-05-08T13:44:50.269+05:30  WARN 13868 --- [ai] [http-nio-8082-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name]
-2025-05-08T13:44:50.272+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-05-08T13:44:57.733+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
-2025-05-08T13:44:57.734+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
-2025-05-08T13:44:57.739+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-123, orderDate=2022-01-01T12:00, status=null)]
-2025-05-08T13:44:58.017+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-05-08T13:44:58.018+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-123, orderDate=2025-05-08T13:44:57.782688, status=PROCESSING)]
-2025-05-08T13:44:58.023+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2025-05-08T13:47:29.407+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
-2025-05-08T13:47:29.409+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
-2025-05-08T13:47:29.412+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=null, orderNumber=ORD-1233, orderDate=2022-01-01T12:00, status=null)]
-2025-05-08T13:47:29.421+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
-2025-05-08T13:47:29.422+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-05-08T13:47:29.422+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: Bin ID cannot be null, timestamp=2025-05-08T13:47:29.421474, status= (truncated)...]
-2025-05-08T13:47:29.424+05:30  WARN 13868 --- [ai] [http-nio-8082-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.IllegalArgumentException: Bin ID cannot be null]
-2025-05-08T13:47:29.425+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
-2025-05-08T13:47:45.473+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
-2025-05-08T13:47:45.474+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
-2025-05-08T13:47:45.477+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
-2025-05-08T13:47:45.492+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-05-08T13:47:45.493+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-1238, orderDate=2025-05-08T13:47:45.480338600, status=PROCESS (truncated)...]
-2025-05-08T13:47:45.496+05:30 DEBUG 13868 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
-2025-05-08T13:50:11.936+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-08T13:50:11.952+05:30  INFO 13868 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-08T13:50:11.953+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-05-08T13:50:11.966+05:30  INFO 13868 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-05-08T13:50:12.029+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-05-08T13:50:12.039+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-05-08T13:50:12.053+05:30  INFO 13868 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-05-08T13:50:22.460+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 14884 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
-2025-05-08T13:50:22.465+05:30 DEBUG 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
-2025-05-08T13:50:22.466+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
-2025-05-08T13:50:22.677+05:30  INFO 14884 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-05-08T13:50:22.678+05:30  INFO 14884 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-05-08T13:50:26.445+05:30  INFO 14884 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-05-08T13:50:26.944+05:30  INFO 14884 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 476 ms. Found 5 JPA repository interfaces.
-2025-05-08T13:50:30.092+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
-2025-05-08T13:50:30.133+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-08T13:50:30.135+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-05-08T13:50:30.407+05:30  INFO 14884 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-05-08T13:50:30.408+05:30  INFO 14884 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7724 ms
-2025-05-08T13:50:30.903+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
-2025-05-08T13:50:31.495+05:30  INFO 14884 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-05-08T13:50:31.666+05:30  INFO 14884 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
-2025-05-08T13:50:31.763+05:30  INFO 14884 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-05-08T13:50:32.607+05:30  INFO 14884 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-05-08T13:50:32.687+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-05-08T13:50:33.027+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c2ea64a
-2025-05-08T13:50:33.031+05:30  INFO 14884 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-05-08T13:50:33.130+05:30  WARN 14884 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-05-08T13:50:33.178+05:30  INFO 14884 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-05-10T12:53:53.665+05:30  INFO 29112 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-10T12:53:54.051+05:30  INFO 29112 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T12:53:54.958+05:30  INFO 29112 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T12:53:57.032+05:30  WARN 29112 --- [ai] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trackingController' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\controller\TrackingController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingServiceImpl' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\serviceimpl\TrackingServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'trackingReposiotryService' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\reposiotryservices\TrackingReposiotryService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingRepository' defined in com.huggingFace.ai.repository.TrackingRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+2025-05-10T12:53:57.034+05:30  INFO 29112 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T12:53:57.043+05:30  INFO 29112 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T12:53:57.065+05:30  INFO 29112 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T12:53:57.074+05:30  INFO 29112 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-10T12:53:57.122+05:30  INFO 29112 --- [ai] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-10T12:53:57.187+05:30 ERROR 29112 --- [ai] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trackingController' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\controller\TrackingController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingServiceImpl' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\serviceimpl\TrackingServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'trackingReposiotryService' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\reposiotryservices\TrackingReposiotryService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingRepository' defined in com.huggingFace.ai.repository.TrackingRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1155) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1121) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1056) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.3.jar:3.4.3]
+	at com.huggingFace.ai.AiApplication.main(AiApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.4.3.jar:3.4.3]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trackingServiceImpl' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\serviceimpl\TrackingServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 2: Error creating bean with name 'trackingReposiotryService' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\reposiotryservices\TrackingReposiotryService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingRepository' defined in com.huggingFace.ai.repository.TrackingRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 24 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trackingReposiotryService' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\reposiotryservices\TrackingReposiotryService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingRepository' defined in com.huggingFace.ai.repository.TrackingRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1664) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 38 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'trackingRepository' defined in com.huggingFace.ai.repository.TrackingRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:346) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1606) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1552) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 52 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); Reason: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:120) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:104) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at java.base/java.util.Optional.map(Optional.java:260) ~[na:na]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:92) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:440) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$4(RepositoryFactoryBeanSupport.java:350) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:135) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.util.Lazy.get(Lazy.java:113) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:356) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859) ~[spring-beans-6.2.3.jar:6.2.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-6.2.3.jar:6.2.3]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.huggingFace.ai.repository.TrackingRepository.findAll(com.huggingFace.ai.dto.ShipmentDTO); No property 'findAll' found for type 'Tracking'
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:107) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:128) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:262) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:99) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:116) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	... 74 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'findAll' found for type 'Tracking'
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:94) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:455) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:431) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:384) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330) ~[na:na]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:366) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:344) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:259) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:260) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:389) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:215) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1024) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560) ~[na:na]
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:727) ~[na:na]
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:390) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:100) ~[spring-data-commons-3.4.3.jar:3.4.3]
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:101) ~[spring-data-jpa-3.4.3.jar:3.4.3]
+	... 78 common frames omitted
+
+2025-05-10T13:01:44.746+05:30  INFO 30500 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 30500 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T13:01:44.753+05:30 DEBUG 30500 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T13:01:44.757+05:30  INFO 30500 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T13:01:45.051+05:30  INFO 30500 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T13:01:45.052+05:30  INFO 30500 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T13:01:50.347+05:30  INFO 30500 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T13:01:50.919+05:30  INFO 30500 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 543 ms. Found 6 JPA repository interfaces.
+2025-05-10T13:01:54.337+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-10T13:01:54.456+05:30  INFO 30500 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T13:01:54.473+05:30  INFO 30500 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T13:01:55.086+05:30  INFO 30500 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T13:01:55.088+05:30  INFO 30500 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10034 ms
+2025-05-10T13:01:55.995+05:30 DEBUG 30500 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-10T13:01:56.617+05:30  INFO 30500 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T13:01:56.782+05:30  INFO 30500 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-10T13:01:56.873+05:30  INFO 30500 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T13:01:57.516+05:30  INFO 30500 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T13:01:57.598+05:30  INFO 30500 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T13:01:58.095+05:30  INFO 30500 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cc4ed49
+2025-05-10T13:01:58.101+05:30  INFO 30500 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T13:01:58.229+05:30  WARN 30500 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T13:01:58.289+05:30  INFO 30500 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 8.0.33
@@ -129,39 +206,435 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-05-08T13:50:34.905+05:30  INFO 14884 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
-2025-05-08T13:50:35.334+05:30  INFO 14884 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-05-08T13:50:35.484+05:30  INFO 14884 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-05-08T13:50:38.261+05:30  WARN 14884 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-05-08T13:50:38.675+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 32 mappings in 'requestMappingHandlerMapping'
-2025-05-08T13:50:38.880+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2025-05-08T13:50:39.061+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-05-08T13:50:39.229+05:30 DEBUG 14884 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-05-08T13:50:41.076+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-05-08T13:50:41.350+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
-2025-05-08T13:50:41.694+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
-2025-05-08T13:50:41.698+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-05-08T13:50:41.699+05:30  INFO 14884 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
-2025-05-08T13:50:41.832+05:30  INFO 14884 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2025-05-08T13:50:41.832+05:30  INFO 14884 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 467 ms
-2025-05-08T13:50:41.880+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
-2025-05-08T13:50:41.940+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
-2025-05-08T13:50:41.958+05:30 DEBUG 14884 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
-2025-05-08T13:50:41.988+05:30 DEBUG 14884 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-05-08T13:50:42.026+05:30  INFO 14884 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
-2025-05-08T13:50:42.073+05:30  INFO 14884 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 21.01 seconds (process running for 22.894)
-2025-05-08T13:51:51.968+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-08T13:51:51.970+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2025-05-08T13:51:51.971+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2025-05-08T13:51:51.972+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
-2025-05-08T13:51:51.974+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
-2025-05-08T13:51:51.978+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2b1e0686
-2025-05-08T13:51:51.979+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3987ad29
-2025-05-08T13:51:51.980+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-05-08T13:51:51.981+05:30  INFO 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2025-05-08T13:51:52.058+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/orders", parameters={}
-2025-05-08T13:51:52.069+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.EcartOrderController#createOrder(EcartOrderDTO)
-2025-05-08T13:51:52.349+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [EcartOrderDTO(id=1, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
-2025-05-08T13:51:52.641+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
-2025-05-08T13:51:52.643+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [EcartOrderDTO(id=null, orderNumber=ORD-1238, orderDate=2022-01-01T12:00, status=null)]
-2025-05-08T13:51:52.666+05:30 DEBUG 14884 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-05-10T13:02:00.176+05:30  INFO 30500 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-10T13:02:00.557+05:30  INFO 30500 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T13:02:00.683+05:30  INFO 30500 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T13:02:03.546+05:30  WARN 30500 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T13:02:04.007+05:30 DEBUG 30500 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 37 mappings in 'requestMappingHandlerMapping'
+2025-05-10T13:02:04.200+05:30 DEBUG 30500 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T13:02:04.356+05:30 DEBUG 30500 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T13:02:04.505+05:30 DEBUG 30500 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-10T13:02:06.106+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-10T13:02:06.298+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-05-10T13:02:06.657+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-05-10T13:02:06.664+05:30  INFO 30500 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T13:02:06.666+05:30  INFO 30500 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T13:02:06.806+05:30  INFO 30500 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-10T13:02:06.807+05:30  INFO 30500 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2025-05-10T13:02:06.849+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-10T13:02:06.946+05:30 DEBUG 30500 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-05-10T13:02:06.985+05:30 DEBUG 30500 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T13:02:07.019+05:30 DEBUG 30500 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T13:02:07.067+05:30  INFO 30500 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-05-10T13:02:07.115+05:30  INFO 30500 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 25.493 seconds (process running for 28.539)
+2025-05-10T13:06:18.614+05:30  INFO 30500 --- [ai] [http-nio-8082-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-10T13:06:18.615+05:30  INFO 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-10T13:06:18.616+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-10T13:06:18.617+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-10T13:06:18.617+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-10T13:06:18.621+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4230e17f
+2025-05-10T13:06:18.623+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@a8c56da
+2025-05-10T13:06:18.624+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-10T13:06:18.624+05:30  INFO 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2025-05-10T13:06:18.676+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/tracking/shipments", parameters={}
+2025-05-10T13:06:18.694+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#createShipment(ShipmentDTO)
+2025-05-10T13:06:18.951+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ShipmentDTO(trackingNumber=, status=PENDING, shipmentDate=2022-01-01T12:00, expectedDeliveryDate=202 (truncated)...]
+2025-05-10T13:06:19.267+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:06:19.270+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-5CEC97, status=PENDING, shipmentDate=2025-05-10T13:06:18.9 (truncated)...]
+2025-05-10T13:06:19.296+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2025-05-10T13:09:07.390+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/tracking/shipments", parameters={}
+2025-05-10T13:09:07.391+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#getAllShipments()
+2025-05-10T13:09:07.652+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:09:07.653+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[ShipmentDTO(trackingNumber=TRACK-5CEC97, status=PENDING, shipmentDate=2025-05-10T13:06:18.974748, e (truncated)...]
+2025-05-10T13:09:07.662+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T13:09:32.915+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T13:09:32.917+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#updateTracking(Long, TrackingDTO)
+2025-05-10T13:09:32.943+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] o.s.web.method.HandlerMethod             : Could not resolve parameter [1] in public org.springframework.http.ResponseEntity<com.huggingFace.ai.dto.TrackingDTO> com.huggingFace.ai.controller.TrackingController.updateTracking(java.lang.Long,com.huggingFace.ai.dto.TrackingDTO): JSON parse error: Cannot deserialize value of type `com.huggingFace.ai.domain.enums.EcartStatus` from String "IN_TRANSIT": not one of the values accepted for Enum class: [COMPLETED, FAILED, PENDING, PROCESSING]
+2025-05-10T13:09:32.948+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.huggingFace.ai.exceptions.GlobalExceptionHandler#handleGlobalException(Exception)
+2025-05-10T13:09:32.954+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:09:32.956+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{message=Internal Server Error: JSON parse error: Cannot deserialize value of type `com.huggingFace. (truncated)...]
+2025-05-10T13:09:32.964+05:30  WARN 30500 --- [ai] [http-nio-8082-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `com.huggingFace.ai.domain.enums.EcartStatus` from String "IN_TRANSIT": not one of the values accepted for Enum class: [COMPLETED, FAILED, PENDING, PROCESSING]]
+2025-05-10T13:09:32.967+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 500 INTERNAL_SERVER_ERROR
+2025-05-10T13:09:45.274+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T13:09:45.276+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#updateTracking(Long, TrackingDTO)
+2025-05-10T13:09:45.278+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TrackingDTO(id=1, trackingNumber=TRACK-123, status=null, shipmentDate=2022-01-01T12:00, expectedDeli (truncated)...]
+2025-05-10T13:09:45.341+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:09:45.343+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=null, shipmentDate=2022-01-01T12:00, expectedD (truncated)...]
+2025-05-10T13:09:45.344+05:30 DEBUG 30500 --- [ai] [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T13:10:43.272+05:30  INFO 30500 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T13:10:43.288+05:30  INFO 30500 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T13:10:43.290+05:30  INFO 30500 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T13:10:43.304+05:30  INFO 30500 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T13:10:43.366+05:30  INFO 30500 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T13:10:43.375+05:30  INFO 30500 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T13:10:43.393+05:30  INFO 30500 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T13:10:53.860+05:30  INFO 25356 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 25356 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T13:10:53.865+05:30 DEBUG 25356 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T13:10:53.870+05:30  INFO 25356 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T13:10:54.060+05:30  INFO 25356 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T13:10:54.062+05:30  INFO 25356 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T13:10:57.588+05:30  INFO 25356 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T13:10:58.028+05:30  INFO 25356 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 415 ms. Found 6 JPA repository interfaces.
+2025-05-10T13:11:00.548+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-10T13:11:00.587+05:30  INFO 25356 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T13:11:00.588+05:30  INFO 25356 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T13:11:00.799+05:30  INFO 25356 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T13:11:00.801+05:30  INFO 25356 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6736 ms
+2025-05-10T13:11:01.290+05:30 DEBUG 25356 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-10T13:11:01.746+05:30  INFO 25356 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T13:11:01.917+05:30  INFO 25356 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-10T13:11:02.026+05:30  INFO 25356 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T13:11:02.699+05:30  INFO 25356 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T13:11:02.758+05:30  INFO 25356 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T13:11:03.110+05:30  INFO 25356 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74c0276a
+2025-05-10T13:11:03.114+05:30  INFO 25356 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T13:11:03.206+05:30  WARN 25356 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T13:11:03.247+05:30  INFO 25356 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-10T13:11:04.795+05:30  INFO 25356 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-10T13:11:05.199+05:30  INFO 25356 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T13:11:05.330+05:30  INFO 25356 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T13:11:08.593+05:30  WARN 25356 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T13:11:09.061+05:30 DEBUG 25356 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 37 mappings in 'requestMappingHandlerMapping'
+2025-05-10T13:11:09.246+05:30 DEBUG 25356 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T13:11:09.394+05:30 DEBUG 25356 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T13:11:09.551+05:30 DEBUG 25356 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-10T13:11:11.212+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-10T13:11:11.404+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-05-10T13:11:11.677+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-05-10T13:11:11.680+05:30  INFO 25356 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T13:11:11.682+05:30  INFO 25356 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T13:11:11.803+05:30  INFO 25356 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-10T13:11:11.803+05:30  INFO 25356 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 389 ms
+2025-05-10T13:11:11.851+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-10T13:11:11.905+05:30 DEBUG 25356 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-05-10T13:11:11.927+05:30 DEBUG 25356 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T13:11:11.959+05:30 DEBUG 25356 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T13:11:11.994+05:30  INFO 25356 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-05-10T13:11:12.038+05:30  INFO 25356 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 19.59 seconds (process running for 21.372)
+2025-05-10T13:12:11.296+05:30  INFO 25356 --- [ai] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-10T13:12:11.297+05:30  INFO 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-10T13:12:11.298+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-10T13:12:11.299+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-10T13:12:11.300+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-10T13:12:11.302+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@22cfd373
+2025-05-10T13:12:11.304+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@2b1a35a5
+2025-05-10T13:12:11.305+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-10T13:12:11.305+05:30  INFO 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2025-05-10T13:12:11.342+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T13:12:11.357+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#updateTracking(Long, TrackingDTO)
+2025-05-10T13:12:11.582+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TrackingDTO(id=1, trackingNumber=TRACK-123, status=null, shipmentDate=2022-01-01T12:00, expectedDeli (truncated)...]
+2025-05-10T13:12:11.891+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:12:11.896+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=PROCESSING, shipmentDate=2022-01-01T12:00, exp (truncated)...]
+2025-05-10T13:12:11.918+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T13:12:34.767+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T13:12:34.771+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#getTrackingDetails(Long)
+2025-05-10T13:12:34.804+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:12:34.807+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=PROCESSING, shipmentDate=2022-01-01T12:00, exp (truncated)...]
+2025-05-10T13:12:34.813+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T13:12:56.394+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/tracking/trackings/number/TRACK-123", parameters={}
+2025-05-10T13:12:56.394+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#getTrackingByNumber(String)
+2025-05-10T13:12:56.581+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T13:12:56.582+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=PROCESSING, shipmentDate=2022-01-01T12:00, exp (truncated)...]
+2025-05-10T13:12:56.584+05:30 DEBUG 25356 --- [ai] [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T15:22:30.954+05:30  INFO 25356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T15:22:31.056+05:30  INFO 25356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T15:22:31.067+05:30  INFO 25356 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T15:22:31.120+05:30  INFO 25356 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T15:22:31.657+05:30  INFO 25356 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T15:22:31.739+05:30  INFO 25356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T15:22:31.809+05:30  INFO 25356 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T15:23:14.203+05:30  INFO 7232 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 7232 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T15:23:14.209+05:30 DEBUG 7232 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T15:23:14.211+05:30  INFO 7232 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T15:23:14.474+05:30  INFO 7232 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T15:23:14.475+05:30  INFO 7232 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T15:23:18.498+05:30  WARN 7232 --- [ai] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'trackingWebSocketHandler' defined in class path resource [com/huggingFace/ai/configs/WebSocketConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webSocketConfig; factoryMethodName=trackingWebSocketHandler; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/huggingFace/ai/configs/WebSocketConfig.class]] for bean 'trackingWebSocketHandler' since there is already [Generic bean: class=com.huggingFace.ai.configs.TrackingWebSocketHandler; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\configs\TrackingWebSocketHandler.class]] bound.
+2025-05-10T15:23:18.573+05:30  INFO 7232 --- [ai] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-10T15:23:18.786+05:30 ERROR 7232 --- [ai] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'trackingWebSocketHandler', defined in class path resource [com/huggingFace/ai/configs/WebSocketConfig.class], could not be registered. A bean with that name has already been defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\configs\TrackingWebSocketHandler.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2025-05-10T15:30:57.965+05:30  INFO 14604 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 14604 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T15:30:57.974+05:30 DEBUG 14604 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T15:30:57.980+05:30  INFO 14604 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T15:30:58.229+05:30  INFO 14604 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T15:30:58.229+05:30  INFO 14604 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T15:31:00.590+05:30  INFO 14604 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T15:31:00.828+05:30  INFO 14604 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 225 ms. Found 6 JPA repository interfaces.
+2025-05-10T15:31:02.299+05:30  INFO 14604 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-10T15:31:02.327+05:30  INFO 14604 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T15:31:02.328+05:30  INFO 14604 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T15:31:02.445+05:30  INFO 14604 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T15:31:02.446+05:30  INFO 14604 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4212 ms
+2025-05-10T15:31:02.738+05:30 DEBUG 14604 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-10T15:31:03.010+05:30  INFO 14604 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T15:31:03.141+05:30  INFO 14604 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-10T15:31:03.203+05:30  INFO 14604 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T15:31:03.716+05:30  INFO 14604 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T15:31:03.759+05:30  INFO 14604 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T15:31:03.974+05:30  INFO 14604 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@436d2b2d
+2025-05-10T15:31:03.975+05:30  INFO 14604 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T15:31:04.067+05:30  WARN 14604 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T15:31:04.100+05:30  INFO 14604 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-10T15:31:05.239+05:30  INFO 14604 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-10T15:31:05.515+05:30  INFO 14604 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T15:31:05.620+05:30  INFO 14604 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T15:31:06.881+05:30  WARN 14604 --- [ai] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trackingController' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\controller\TrackingController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'trackingServiceImpl' defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\serviceimpl\TrackingServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 3: Error creating bean with name 'trackingWebSocketHandler': Unsatisfied dependency expressed through field 'trackingService': Error creating bean with name 'trackingServiceImpl': Requested bean is currently in creation: Is there an unresolvable circular reference or an asynchronous initialization dependency?
+2025-05-10T15:31:06.883+05:30  INFO 14604 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T15:31:06.888+05:30  INFO 14604 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T15:31:06.901+05:30  INFO 14604 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T15:31:06.906+05:30  INFO 14604 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-10T15:31:06.933+05:30  INFO 14604 --- [ai] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-10T15:31:06.986+05:30 ERROR 14604 --- [ai] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+   trackingController defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\controller\TrackingController.class]
+┌─────┐
+|  trackingServiceImpl defined in file [C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes\com\huggingFace\ai\serviceimpl\TrackingServiceImpl.class]
+↑     ↓
+|  trackingWebSocketHandler (field private com.huggingFace.ai.service.TrackingService com.huggingFace.ai.configs.TrackingWebSocketHandler.trackingService)
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2025-05-10T15:35:19.607+05:30  INFO 11616 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Starting AiApplication using Java 23.0.2 with PID 11616 (C:\Users\shuvijay\Hugging-face-Wrappers\ai\target\classes started by shuvijay in C:\Users\shuvijay\Hugging-face-Wrappers)
+2025-05-10T15:35:19.610+05:30 DEBUG 11616 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-05-10T15:35:19.612+05:30  INFO 11616 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-10T15:35:19.730+05:30  INFO 11616 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-10T15:35:19.731+05:30  INFO 11616 --- [ai] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-10T15:35:22.813+05:30  INFO 11616 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-10T15:35:23.137+05:30  INFO 11616 --- [ai] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 310 ms. Found 6 JPA repository interfaces.
+2025-05-10T15:35:25.352+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2025-05-10T15:35:25.388+05:30  INFO 11616 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T15:35:25.388+05:30  INFO 11616 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T15:35:25.580+05:30  INFO 11616 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-10T15:35:25.581+05:30  INFO 11616 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5848 ms
+2025-05-10T15:35:26.076+05:30 DEBUG 11616 --- [ai] [restartedMain] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2025-05-10T15:35:26.577+05:30  INFO 11616 --- [ai] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-10T15:35:26.761+05:30  INFO 11616 --- [ai] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-05-10T15:35:26.863+05:30  INFO 11616 --- [ai] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-10T15:35:27.771+05:30  INFO 11616 --- [ai] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-10T15:35:27.871+05:30  INFO 11616 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-10T15:35:28.267+05:30  INFO 11616 --- [ai] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40c42ecf
+2025-05-10T15:35:28.271+05:30  INFO 11616 --- [ai] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-10T15:35:28.369+05:30  WARN 11616 --- [ai] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-10T15:35:28.410+05:30  INFO 11616 --- [ai] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.33
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-10T15:35:30.435+05:30  INFO 11616 --- [ai] [restartedMain] o.h.m.i.EntityInstantiatorPojoStandard   : HHH000182: No default (no-argument) constructor for class: com.huggingFace.ai.domain.EcartOrder (class must be instantiated by Interceptor)
+2025-05-10T15:35:30.801+05:30  INFO 11616 --- [ai] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-10T15:35:30.920+05:30  INFO 11616 --- [ai] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T15:35:34.078+05:30 DEBUG 11616 --- [ai] [restartedMain] o.s.w.s.s.s.WebSocketHandlerMapping      : Patterns [/tracking/websocket] in 'webSocketHandlerMapping'
+2025-05-10T15:35:35.076+05:30  WARN 11616 --- [ai] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-10T15:35:35.485+05:30 DEBUG 11616 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 37 mappings in 'requestMappingHandlerMapping'
+2025-05-10T15:35:35.678+05:30 DEBUG 11616 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T15:35:35.810+05:30 DEBUG 11616 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T15:35:36.013+05:30 DEBUG 11616 --- [ai] [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-05-10T15:35:37.653+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-10T15:35:37.795+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2025-05-10T15:35:37.996+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-05-10T15:35:37.997+05:30  INFO 11616 --- [ai] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-10T15:35:37.998+05:30  INFO 11616 --- [ai] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-05-10T15:35:38.070+05:30  INFO 11616 --- [ai] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-05-10T15:35:38.071+05:30  INFO 11616 --- [ai] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 268 ms
+2025-05-10T15:35:38.106+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-05-10T15:35:38.133+05:30 DEBUG 11616 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2025-05-10T15:35:38.146+05:30 DEBUG 11616 --- [ai] [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2025-05-10T15:35:38.164+05:30 DEBUG 11616 --- [ai] [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-05-10T15:35:38.187+05:30  INFO 11616 --- [ai] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-05-10T15:35:38.223+05:30  INFO 11616 --- [ai] [restartedMain] com.huggingFace.ai.AiApplication         : Started AiApplication in 19.654 seconds (process running for 20.924)
+2025-05-10T15:36:58.521+05:30  INFO 11616 --- [ai] [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-10T15:36:58.522+05:30  INFO 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-05-10T15:36:58.522+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2025-05-10T15:36:58.523+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2025-05-10T15:36:58.523+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2025-05-10T15:36:58.525+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@226542b8
+2025-05-10T15:36:58.526+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@188f3d86
+2025-05-10T15:36:58.527+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-05-10T15:36:58.527+05:30  INFO 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2025-05-10T15:36:58.556+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/tracking/websocket", parameters={}
+2025-05-10T15:36:58.564+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@7f94ee38
+2025-05-10T15:36:58.570+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /tracking/websocket
+2025-05-10T15:36:58.609+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-05-10T15:36:58.640+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=d00964e7-895c-743f-172e-eeb5160583a2, uri=ws://localhost:8082/tracking/websocket]
+2025-05-10T15:40:06.139+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T15:40:06.142+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#updateTracking(Long, TrackingDTO)
+2025-05-10T15:40:06.289+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TrackingDTO(id=1, trackingNumber=TRACK-123, status=null, shipmentDate=2022-01-01T12:00, expectedDeli (truncated)...]
+2025-05-10T15:40:06.516+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T15:40:06.517+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=PROCESSING, shipmentDate=2022-01-01T12:00, exp (truncated)...]
+2025-05-10T15:40:06.529+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T15:41:21.750+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/tracking/websocket", parameters={}
+2025-05-10T15:41:21.751+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-7] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@7f94ee38
+2025-05-10T15:41:21.752+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-7] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /tracking/websocket
+2025-05-10T15:41:21.754+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-05-10T15:41:21.758+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-7] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=fc654c8c-ec14-9bdd-3b5d-7ce157657160, uri=ws://localhost:8082/tracking/websocket]
+2025-05-10T15:41:46.172+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-9] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=fc654c8c-ec14-9bdd-3b5d-7ce157657160, uri=ws://localhost:8082/tracking/websocket] closed with CloseStatus[code=1000, reason=null]
+2025-05-10T15:41:58.026+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : PUT "/api/v1/tracking/trackings/1", parameters={}
+2025-05-10T15:41:58.027+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.huggingFace.ai.controller.TrackingController#updateTracking(Long, TrackingDTO)
+2025-05-10T15:41:58.029+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [TrackingDTO(id=1, trackingNumber=TRACK-123, status=null, shipmentDate=2022-01-01T12:00, expectedDeli (truncated)...]
+2025-05-10T15:41:58.041+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-05-10T15:41:58.042+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [TrackingDTO(id=null, trackingNumber=TRACK-123, status=PROCESSING, shipmentDate=2022-01-01T12:00, exp (truncated)...]
+2025-05-10T15:41:58.044+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2025-05-10T15:42:20.209+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/tracking/websocket", parameters={}
+2025-05-10T15:42:20.212+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-2] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@7f94ee38
+2025-05-10T15:42:20.213+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-2] o.s.w.s.s.s.WebSocketHttpRequestHandler  : GET /tracking/websocket
+2025-05-10T15:42:20.215+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 101 SWITCHING_PROTOCOLS
+2025-05-10T15:42:20.217+05:30 DEBUG 11616 --- [ai] [http-nio-8082-exec-2] s.w.s.h.LoggingWebSocketHandlerDecorator : New StandardWebSocketSession[id=da4c9962-8dc4-d171-b2c6-7fb3c01113dd, uri=ws://localhost:8082/tracking/websocket]
+2025-05-10T15:47:08.395+05:30  INFO 11616 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T15:47:08.404+05:30  INFO 11616 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T15:47:08.405+05:30  INFO 11616 --- [ai] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-10T15:47:08.410+05:30  INFO 11616 --- [ai] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-10T15:47:08.459+05:30  INFO 11616 --- [ai] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-10T15:47:08.464+05:30  INFO 11616 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-10T15:47:08.477+05:30  INFO 11616 --- [ai] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-10T15:47:08.480+05:30 DEBUG 11616 --- [ai] [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=d00964e7-895c-743f-172e-eeb5160583a2, uri=ws://localhost:8082/tracking/websocket]
+
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:792) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:589) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:556) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:544) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1024) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4093) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4703) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:471) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:915) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:447) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:301) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:374) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:182) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:273) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1634) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	... 37 common frames omitted
+
+2025-05-10T15:47:08.496+05:30 DEBUG 11616 --- [ai] [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=d00964e7-895c-743f-172e-eeb5160583a2, uri=ws://localhost:8082/tracking/websocket] closed with CloseStatus[code=1001, reason=The web application is stopping]
+2025-05-10T15:47:08.497+05:30 DEBUG 11616 --- [ai] [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : Transport error in StandardWebSocketSession[id=da4c9962-8dc4-d171-b2c6-7fb3c01113dd, uri=ws://localhost:8082/tracking/websocket]
+
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:792) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:589) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:556) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:544) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1024) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4093) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4703) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:148) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:471) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:915) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:447) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:301) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:374) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:182) ~[spring-boot-3.4.3.jar:3.4.3]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126) ~[spring-context-6.2.3.jar:6.2.3]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-3.4.3.jar:3.4.3]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:273) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1634) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313) ~[tomcat-embed-websocket-10.1.36.jar:10.1.36]
+	... 37 common frames omitted
+
+2025-05-10T15:47:08.499+05:30 DEBUG 11616 --- [ai] [SpringApplicationShutdownHook] s.w.s.h.LoggingWebSocketHandlerDecorator : StandardWebSocketSession[id=da4c9962-8dc4-d171-b2c6-7fb3c01113dd, uri=ws://localhost:8082/tracking/websocket] closed with CloseStatus[code=1001, reason=The web application is stopping]
