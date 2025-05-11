@@ -81,4 +81,9 @@ public class SecurityConfig {
             return UsernamePasswordAuthenticationToken.class.isAssignableFrom(authentication);
         }
     }
+
+    @Bean
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
+        return new BCryptPasswordEncoder();
+    }
 }

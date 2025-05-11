@@ -23,17 +23,24 @@ public class JWTUtil {
 
 
     public String generateToken(UserDetails userDetails) {
-        return Jwts.builder()
-                .setSubject(userDetails.getUsername())
-                .claim("role", userDetails.getAuthorities().stream()
-                        .map(GrantedAuthority::getAuthority)
-                        .collect(Collectors.joining(",")))
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + jwtConfig.EXPIRATION_TIME))
-                .signWith(SignatureAlgorithm.HS512, jwtConfig.SECRET)
-                .compact();
+        if (userDetails == null) {
+            return null;
+        }
+        try {
+            return Jwts.builder()
+                    .setSubject(userDetails.getUsername())
+                    .claim("role", userDetails.getAuthorities().stream()
+                            .map(GrantedAuthority::getAuthority)
+                            .collect(Collectors.joining(",")))
+                    .setIssuedAt(new Date())
+                    .setExpiration(new Date(System.currentTimeMillis() + jwtConfig.EXPIRATION_TIME))
+                    .signWith(SignatureAlgorithm.HS512, jwtConfig.SECRET)
+                    .compact();
+        } catch (Exception e) {
+            System.out.println("Error generating token: " + e.getMessage());
+            return null;
+        }
     }
-
     public boolean validateToken(String token) {
         try {
             Jws<Claims> claimsJws = Jwts.parser().setSigningKey(jwtConfig.SECRET).parseClaimsJws(token);

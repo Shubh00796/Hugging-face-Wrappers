@@ -12,5 +12,4 @@ public interface UserService {
     UserDTO updateUser(UserDTO userDTO);
     void deleteUser(Long id);
     UserDTO login(LoginUserDTO loginUserDTO);
-    String generateToken(UserDTO userDTO);
 }
