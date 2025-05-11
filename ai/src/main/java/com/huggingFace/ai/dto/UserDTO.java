@@ -1,36 +1,23 @@
-package com.huggingFace.ai.domain;
+package com.huggingFace.ai.dto;
 
 import com.huggingFace.ai.domain.enums.UserRole;
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
-@Entity
-@Table(name = "users")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class UserDTO {
     private Long id;
-
-    @Column(unique = true)
     private String username;
-
     private String password;
-
     private String email;
-
-    @Enumerated(EnumType.STRING)
     private UserRole role;
-
-    @Column(name = "enabled")
-    private boolean enabled = true;
+    private boolean enabled;
+    private String token;
 }
